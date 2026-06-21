@@ -1,0 +1,39 @@
+{
+  "score": "Puan: {{score}}",
+  "stats": {
+    "title": "İtibar İstatistikleri",
+    "totalReviews": "Toplam Değerlendirme",
+    "totalFacts": "Toplam Bilgi",
+    "helpfulVotes": "Faydalı Oylar",
+    "verifiedFacts": "Doğrulanmış",
+    "verificationRate": "Doğrulama Oranı",
+    "memberSince": "Üyelik Tarihi",
+    "memberSinceWeb": "{{date}} tarihinden beri üye",
+    "points": "{{count}} puan"
+  },
+  "recentActivity": {
+    "title": "Son Aktiviteler"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "account": "Hesap Ayarları",
+    "notifications": "Bildirim Tercihleri",
+    "privacy": "Gizlilik Ayarları",
+    "help": "Yardım ve Destek",
+    "theme": "Tema ({{mode}})",
+    "themeDark": "Koyu",
+    "themeLight": "Açık"
+  },
+  "type": {
+    "review": "Değerlendirme",
+    "fact": "Bilgi"
+  },
+  "comingSoon": {
+    "title": "Yakında!",
+    "message": "Bu özellik yakında eklenecektir."
+  },
+  "error": {
+    "userNotFound": "Kullanıcı bulunamadı",
+    "loadFailed": "Profil yüklenemedi"
+  }
+}

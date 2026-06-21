@@ -1,0 +1,18 @@
+# Search initial "browse" state (before any query): the category browse +
+# popular sections render. Distinct from 13 (no-results AFTER a query).
+# Catalog-independent (categories come from Supabase AppData).
+appId: ${APP_ID}
+---
+- runFlow:
+    file: _login.yaml
+    env:
+      USERNAME: ${SEED_USER}
+      PASSWORD: ${SEED_PASS}
+- tapOn: "Ara"
+- assertVisible: "Kategorilere Göz At"
+- scrollUntilVisible:
+    element:
+      text: "Şu Anda Popüler"
+    direction: DOWN
+    waitToSettleTimeoutMs: 1000
+- assertVisible: "Şu Anda Popüler"

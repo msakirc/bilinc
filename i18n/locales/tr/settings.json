@@ -1,0 +1,74 @@
+{
+  "account": {
+    "title": "Hesap Ayarları",
+    "infoTitle": "Hesap Bilgileri",
+    "usernameNote": "Kullanıcı adı değiştirilemez",
+    "displayNamePlaceholder": "Görünen adınız",
+    "saving": "Kaydediliyor...",
+    "saveSuccessTitle": "Başarılı",
+    "saveSuccessMessage": "Profil bilgileriniz güncellendi.",
+    "saveErrorTitle": "Hata",
+    "saveErrorMessage": "Güncelleme sırasında bir hata oluştu.",
+    "danger": {
+      "title": "Tehlikeli Bölge",
+      "description": "Hesabınızı silerseniz tüm verileriniz kalıcı olarak kaldırılacaktır. Bu işlem geri alınamaz.",
+      "deleteButton": "Hesabımı Sil",
+      "confirmTitle": "Hesabı Sil",
+      "confirmMessage": "Hesabınızı kalıcı olarak silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+      "confirmYes": "Evet, Sil",
+      "requestedTitle": "Talebiniz Alındı",
+      "requestedMessage": "Hesap silme talebi alındı. Bu işlem en kısa sürede gerçekleştirilecektir."
+    }
+  },
+  "notifications": {
+    "title": "Bildirim Tercihleri",
+    "cardTitle": "Bildirim Türleri",
+    "saving": "Kaydediliyor...",
+    "saveSuccessTitle": "Kaydedildi",
+    "saveSuccessMessage": "Bildirim tercihleriniz güncellendi.",
+    "saveErrorTitle": "Hata",
+    "saveErrorMessage": "Tercihler kaydedilemedi. Lütfen tekrar deneyin.",
+    "items": {
+      "newReviews": {
+        "label": "Yeni değerlendirmeler",
+        "description": "İşletmelerinize yeni değerlendirme geldiğinde"
+      },
+      "factVerifications": {
+        "label": "Bilgi doğrulamaları",
+        "description": "Paylaştığınız bilgiler doğrulandığında"
+      },
+      "voteNotifications": {
+        "label": "Oy bildirimleri",
+        "description": "Katkılarınız oy aldığında"
+      },
+      "systemUpdates": {
+        "label": "Sistem güncellemeleri",
+        "description": "Önemli uygulama güncellemeleri ve duyurular"
+      }
+    }
+  },
+  "privacy": {
+    "title": "Gizlilik Ayarları",
+    "cardTitle": "Gizlilik Kontrolü",
+    "saving": "Kaydediliyor...",
+    "saveSuccessTitle": "Kaydedildi",
+    "saveSuccessMessage": "Gizlilik tercihleriniz güncellendi.",
+    "saveErrorTitle": "Hata",
+    "saveErrorMessage": "Tercihler kaydedilemedi. Lütfen tekrar deneyin.",
+    "info": "Bilinç'te e-posta adresiniz asla paylaşılmaz. Tüm katkılarınız kullanıcı adınızla görünür.",
+    "items": {
+      "publicProfile": {
+        "label": "Profilimi herkese açık göster",
+        "description": "Profiliniz ve değerlendirmeleriniz herkese görünür olur"
+      },
+      "showLocationInReviews": {
+        "label": "Değerlendirmelerimde konumumu göster",
+        "description": "Yaptığınız değerlendirmelerde konum bilginiz görüntülenir"
+      },
+      "hideActivityHistory": {
+        "label": "Aktivite geçmişimi gizle",
+        "description": "Diğer kullanıcılar aktivite geçmişinizi göremez"
+      }
+    }
+  }
+}

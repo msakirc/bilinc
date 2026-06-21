@@ -1,0 +1,18 @@
+# Login as a seeded user, then sign out back to welcome.
+appId: ${APP_ID}
+---
+- runFlow:
+    file: _login.yaml
+    env:
+      USERNAME: ${SEED_USER}
+      PASSWORD: ${SEED_PASS}
+- tapOn: "Profil"
+- scrollUntilVisible:
+    element:
+      text: "Çıkış Yap"
+    direction: DOWN
+    visibilityPercentage: 20
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+- tapOn: "Çıkış Yap"
+- assertVisible: "Bilinç"   # back on welcome (logo, top of screen) = logged out

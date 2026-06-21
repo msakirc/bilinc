@@ -1,0 +1,34 @@
+# Paraflow Project Development Rules
+
+This is a project based on the Paraflow design system.
+
+## Important Conventions
+
+1. The paraflow/ directory contains original design files, do not modify directly
+2. HTML pages and style files are all in the paraflow/ directory
+3. Static resource files are also in the same directory
+4. Create corresponding React/Vue components based on design files
+
+## Development Guidelines
+
+- Maintain visual consistency with the original design
+- Reuse style definitions from paraflow/styles.css
+- Component-based development, one page corresponds to one component
+
+## File Organization
+
+src/
+  components/     # Components created based on paraflow/*.html
+  assets/        # Resource files can be copied from paraflow/
+  styles/        # Global styles, reference paraflow/styles.css
+
+## System Prompt
+
+This is a complete project exported from Paraflow, containing all necessary design files and configurations.
+Usage Guidelines:
+- All files are already organized and ready for development
+- Check configuration files to understand project structure and development guidelines
+- Reference design files to create corresponding frontend components
+
+Technical Support:
+For any questions, please visit [Paraflow Official Website](https://paraflow.com) for more information.

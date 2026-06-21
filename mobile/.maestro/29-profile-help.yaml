@@ -1,0 +1,20 @@
+# Profile -> "Yardım ve Destek" shows the coming-soon alert (settings item with
+# no dedicated screen). Locks that branch of the settings handler.
+appId: ${APP_ID}
+---
+- runFlow:
+    file: _login.yaml
+    env:
+      USERNAME: ${SEED_USER}
+      PASSWORD: ${SEED_PASS}
+- tapOn: "Profil"
+- scrollUntilVisible:
+    element:
+      text: "Yardım ve Destek"
+    direction: DOWN
+    visibilityPercentage: 60
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+- tapOn: "Yardım ve Destek"
+- assertVisible: "Yakında!"
+- tapOn: "Onayla|OK|Tamam"

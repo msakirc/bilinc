@@ -1,0 +1,23 @@
+# Profile theme Switch flips light -> dark; the row label reflects the new mode.
+# Requires the profile-theme-switch testID (added alongside this flow).
+appId: ${APP_ID}
+---
+- runFlow:
+    file: _login.yaml
+    env:
+      USERNAME: ${SEED_USER}
+      PASSWORD: ${SEED_PASS}
+- tapOn: "Profil"
+- scrollUntilVisible:
+    element:
+      id: "profile-theme-switch"
+    direction: DOWN
+    visibilityPercentage: 80
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+# Starts in light mode -> label reads "Tema (Açık)".
+- assertVisible: "Tema (Açık)"
+- tapOn:
+    id: "profile-theme-switch"
+# Toggled -> dark mode label.
+- assertVisible: "Tema (Koyu)"

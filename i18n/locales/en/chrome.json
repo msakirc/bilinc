@@ -1,0 +1,12 @@
+{
+  "footer": {
+    "rightsReserved": "All rights reserved.",
+    "exploreHeading": "Explore",
+    "companyHeading": "Bilinç",
+    "legalHeading": "Legal"
+  },
+  "theme": {
+    "light": "Light theme",
+    "dark": "Dark theme"
+  }
+}

@@ -1,0 +1,12 @@
+# Guest searches a term that matches nothing -> the empty/no-results state
+# renders (not a crash, not a stale list). Locks the search empty-state path.
+appId: ${APP_ID}
+---
+- runFlow: _guest.yaml
+- tapOn: "Ara"
+- tapOn:
+    id: "search-input"
+- inputText: "zzxqwk9nomatch00"
+- hideKeyboard
+- assertVisible: "Sonuç bulunamadı"
+- assertVisible: "Farklı anahtar kelimeler deneyin"

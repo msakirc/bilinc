@@ -1,0 +1,33 @@
+# Guest searches, toggles both sort modes, opens first result.
+# Locks the search + sort path (testIDs search-sort-*).
+appId: ${APP_ID}
+---
+- runFlow: _guest.yaml
+- tapOn: "Ara"
+- tapOn:
+    id: "search-input"
+- inputText: ${SEARCH_TERM}
+- hideKeyboard
+# Results render -> sort controls become available. The first (cold) search can
+# be slow (cold creds + Lambda cold-start) -> wait, don't assert immediately.
+- extendedWaitUntil:
+    visible:
+      id: "search-result-.*"
+    timeout: 30000
+- tapOn:
+    id: "search-sort-top-rated"
+- assertVisible:
+    id: "search-result-.*"
+- tapOn:
+    id: "search-sort-most-reviewed"
+- tapOn:
+    id: "search-result-.*"
+# Detail action buttons can sit below the fold (mock-catalog layout) -> scroll.
+- scrollUntilVisible:
+    element:
+      id: "business-write-review"
+    direction: DOWN
+    visibilityPercentage: 30
+    waitToSettleTimeoutMs: 1000
+- assertVisible:
+    id: "business-write-review"

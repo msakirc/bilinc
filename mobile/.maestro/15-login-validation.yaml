@@ -1,0 +1,27 @@
+# Bug-lock: submitting the login form with empty fields shows a validation
+# alert and does NOT attempt a login. Non-destructive.
+appId: ${APP_ID}
+---
+- runFlow: _launch.yaml
+- scrollUntilVisible:
+    element:
+      text: "Zaten hesabın var mı? Giriş Yap"
+    direction: DOWN
+    visibilityPercentage: 20
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+- tapOn: "Zaten hesabın var mı? Giriş Yap"
+- assertVisible: "Tekrar Hoş Geldiniz"
+# Submit with both fields empty.
+- scrollUntilVisible:
+    element:
+      id: "login-submit"
+    direction: DOWN
+    waitToSettleTimeoutMs: 1000
+- tapOn:
+    id: "login-submit"
+- assertVisible: "Lütfen tüm alanları doldurun."
+- tapOn: "Tamam|OK"
+# Still on the login screen (no navigation away).
+- assertVisible:
+    id: "login-username"

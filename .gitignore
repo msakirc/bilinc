@@ -1,0 +1,70 @@
+# ── Monorepo root .gitignore ───────────────────────────────
+# Each module (mobile/, web/) also has its own .gitignore.
+# This file is the catch-all so `git add .` never grabs junk.
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Secrets / env (NEVER commit; .env.example is fine)
+.env
+.env.*
+!.env.example
+**/.env
+!**/.env.example
+
+# Build / cache output
+.expo/
+**/.expo/
+.next/
+**/.next/
+dist/
+build/
+out/
+*.tsbuildinfo
+coverage/
+**/coverage/
+
+# Python
+__pycache__/
+**/__pycache__/
+*.pyc
+.venv/
+**/.venv/
+*.log
+
+# Lambda artifacts
+**/*.zip
+
+# Editor / OS
+.idea/
+**/.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+
+# Supabase CLI cache
+**/.temp/
+
+# Local tooling
+.claude/
+
+# Superpowers brainstorm/scratch (mockups, session dirs — regenerable)
+.superpowers/
+
+# Test run artifacts (root-level Playwright output)
+/test-results/
+
+# Project-specific
+workspace/paraflow/product-index.json
+
+# Scraper data output (regenerable, multi-GB — never commit)
+mobile/py/data/
+mobile/py/ministry_facts/ministry_facts_data/
+
+# Internal — NOT for public repo (handoffs, research, design specs, infra ops, strategy)
+docs/
+paraflow/
+mobile/docs/
+mobile/lambda/search-proxy/README.md

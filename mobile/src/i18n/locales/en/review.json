@@ -1,0 +1,61 @@
+{
+  "screenTitle": "Write a Review",
+  "title": "Write a Review",
+  "ratingLabel": "Your Rating",
+  "ratingLabelWeb": "Rating *",
+  "ratingPlaceholder": "Select a rating",
+  "starLabels": {
+    "1": "Terrible",
+    "2": "Poor",
+    "3": "Okay",
+    "4": "Good",
+    "5": "Excellent"
+  },
+  "content": {
+    "label": "Your Review",
+    "labelWeb": "Review *",
+    "placeholder": "Share your experience...",
+    "placeholderWeb": "Share your experience (at least 10 characters)",
+    "charCount": "{{count}} characters"
+  },
+  "titleField": {
+    "label": "Title (optional)",
+    "placeholder": "Give your review a title"
+  },
+  "media": {
+    "title": "Add Photos",
+    "subtitle": "Up to {{max}} photos ({{count}}/{{max}})",
+    "add": "Add",
+    "permissionTitle": "Permission Required",
+    "permissionMessage": "Grant gallery access to add photos."
+  },
+  "privacyNotice": "Your username will be visible",
+  "submit": "Submit Review",
+  "submitWeb": "Submit Review",
+  "submitting": "Submitting...",
+  "saveDraft": "Save as Draft",
+  "draftSaved": {
+    "title": "Draft Saved",
+    "message": "Your review has been saved as a draft."
+  },
+  "guest": {
+    "title": "Sign In Required",
+    "subtitle": "Please sign in to your account to submit a review.",
+    "back": "Go Back"
+  },
+  "validation": {
+    "selectRating": "Please select a rating",
+    "minLength": "The review must be at least 10 characters"
+  },
+  "success": {
+    "title": "Success",
+    "message": "Your review has been submitted!"
+  },
+  "error": {
+    "auth": "You need to sign in to submit a review.",
+    "generic": "Could not submit the review. Please try again.",
+    "genericWeb": "Could not submit the review"
+  },
+  "starAria": "{{n}} star",
+  "ratingGroupAria": "Rating"
+}

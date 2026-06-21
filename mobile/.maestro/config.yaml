@@ -1,0 +1,7 @@
+# Maestro workspace config — Bilinç E2E
+# Run order is alphabetical by filename. Helper flows are prefixed "_" and
+# excluded from direct runs via the "subflow" tag.
+flows:
+  - "*.yaml"
+excludeTags:
+  - subflow

@@ -1,0 +1,31 @@
+# Account settings save path: Profile -> Hesap Ayarları -> Kaydet persists the
+# profile (Supabase users update under owner RLS) and shows the success alert.
+# Saves the existing display name -> non-destructive.
+appId: ${APP_ID}
+---
+- runFlow:
+    file: _login.yaml
+    env:
+      USERNAME: ${SEED_USER}
+      PASSWORD: ${SEED_PASS}
+- tapOn: "Profil"
+- scrollUntilVisible:
+    element:
+      text: "Hesap Ayarları"
+    direction: DOWN
+    visibilityPercentage: 40
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+- tapOn: "Hesap Ayarları"
+- assertVisible: "Hesap Bilgileri"
+- scrollUntilVisible:
+    element:
+      text: "Kaydet"
+    direction: DOWN
+    waitToSettleTimeoutMs: 1000
+- tapOn: "Kaydet"
+# Supabase update is async -> wait for the success alert.
+- extendedWaitUntil:
+    visible: "Başarılı"
+    timeout: 15000
+- tapOn: "Onayla|OK|Tamam"

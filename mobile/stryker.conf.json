@@ -1,0 +1,28 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "testRunner": "jest",
+  "jest": {
+    "projectType": "custom",
+    "configFile": "jest.config.js"
+  },
+  "mutate": [
+    "src/services/database.ts",
+    "src/services/dynamodb.ts",
+    "src/services/search.ts",
+    "src/store/auth.ts",
+    "src/config/legal.ts"
+  ],
+  "coverageAnalysis": "perTest",
+  "concurrency": 2,
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": 10
+  },
+  "reporters": ["html", "clear-text", "progress"],
+  "htmlReporter": {
+    "fileName": "reports/mutation/mutation.html"
+  },
+  "timeoutMS": 60000,
+  "timeoutFactor": 1.5
+}

@@ -1,0 +1,59 @@
+# Happy path: trusted user (rep >= 100) reports a fact successfully.
+# Complement to 05 (which locks the sub-100 gate). WRITES A REAL FACT ROW —
+# test Supabase only (see README prod-safety guard).
+appId: ${APP_ID}
+---
+- runFlow:
+    file: _login.yaml
+    env:
+      USERNAME: ${SEED_USER}
+      PASSWORD: ${SEED_PASS}
+- runFlow: _open-business.yaml
+- scrollUntilVisible:
+    element:
+      id: "business-report-fact"
+    direction: DOWN
+    visibilityPercentage: 20
+    waitToSettleTimeoutMs: 1000
+- tapOn:
+    id: "business-report-fact"
+# No rep-gate notice for a trusted user.
+- assertNotVisible: "Gerçek bildirmek için en az 100 itibar puanı gereklidir"
+- tapOn:
+    id: "fact-category-safety"
+- tapOn:
+    id: "fact-statement"
+# Maestro inputText is ASCII-only (mobile-dev-inc/maestro#146) -> no ç/ş/ğ.
+- inputText: "E2E otomatik gercek bildirimi metni."
+- hideKeyboard
+# Guarantee checkbox + submit sit below evidence/category cards -> scroll first.
+- scrollUntilVisible:
+    element:
+      id: "fact-truth-guarantee"
+    direction: DOWN
+    visibilityPercentage: 50
+    waitToSettleTimeoutMs: 1000
+- tapOn:
+    id: "fact-truth-guarantee"
+- scrollUntilVisible:
+    element:
+      id: "fact-submit"
+    direction: DOWN
+    visibilityPercentage: 50
+    waitToSettleTimeoutMs: 1000
+- tapOn:
+    id: "fact-submit"
+# submitFact is async (network) -> wait for the success alert before dismissing.
+# Waiting on "Başarılı" also proves a real success (an error shows "Hata").
+- extendedWaitUntil:
+    visible: "Başarılı"
+    timeout: 15000
+- tapOn: "Onayla|OK|Tamam"
+- scrollUntilVisible:
+    element:
+      id: "business-write-review"
+    direction: DOWN
+    visibilityPercentage: 20
+    waitToSettleTimeoutMs: 1000
+- assertVisible:
+    id: "business-write-review"

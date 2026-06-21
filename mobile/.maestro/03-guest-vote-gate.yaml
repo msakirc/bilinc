@@ -1,0 +1,11 @@
+# Bug-lock: guest pressing a vote button is routed to login, not silently rejected.
+appId: ${APP_ID}
+---
+- runFlow: _guest.yaml
+- runFlow: _open-business.yaml
+# Press any vote button (fact or review). IDs: <type>-vote-<dir>-<itemId>
+- tapOn:
+    id: ".*-vote-(up|down)-.*"
+# Guest must be redirected to the auth flow.
+- assertVisible:
+    id: "login-username"

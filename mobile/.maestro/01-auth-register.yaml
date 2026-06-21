@@ -1,0 +1,43 @@
+# Register a fresh account. With email-confirm OFF, signUp returns a session and
+# AuthGate routes the now-authenticated user straight to Home (the setup-security
+# screen is bypassed by the redirect), so success = landing on the Home tab.
+appId: ${APP_ID}
+---
+- runFlow: _launch.yaml
+- scrollUntilVisible:
+    element:
+      text: "Zaten hesabın var mı? Giriş Yap"
+    direction: DOWN
+    visibilityPercentage: 20
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+- tapOn: "Zaten hesabın var mı? Giriş Yap"
+- tapOn:
+    id: "login-register"
+- tapOn:
+    id: "register-username"
+- inputText: "e2e_reg_${REG_SUFFIX}"
+- tapOn:
+    id: "register-password"
+- inputText: "Test1234!"
+- tapOn:
+    id: "register-confirm-password"
+- inputText: "Test1234!"
+- hideKeyboard
+- tapOn:
+    id: "register-terms-checkbox"
+- tapOn:
+    id: "register-kvkk-checkbox"
+- scrollUntilVisible:
+    element:
+      id: "register-submit"
+    direction: DOWN
+    visibilityPercentage: 20
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+- tapOn:
+    id: "register-submit"
+# Success alert -> dismiss (button label is locale-dependent: "OK" en / "Tamam" tr)
+- tapOn: "OK|Tamam"
+# Auto-logged-in -> AuthGate lands on Home tab
+- assertVisible: "Ana Sayfa"

@@ -1,0 +1,37 @@
+{
+  "claimedBadge": "Onaylı",
+  "rate": "Puanla",
+  "reviewCount": "{{count}} değerlendirme",
+  "score": "{{count}} puan",
+  "osmAttribution": "Konum verisi: © OpenStreetMap katkıda bulunanlar",
+  "ownerResponse": "İŞLETME YANITI",
+  "tagsis": {
+    "title": "Tağşiş Uyarısı",
+    "official": "RESMİ",
+    "defaultStatement": "Bu işletme/ürün ile ilgili resmi tağşiş kaydı bulunmaktadır.",
+    "source": "Kaynak: T.C. Tarım ve Orman Bakanlığı"
+  },
+  "sections": {
+    "facts": "Bilgiler",
+    "reviews": "Değerlendirmeler",
+    "ratingDistribution": "Puan Dağılımı",
+    "factsCount": "Bilgiler",
+    "reviewsCount": "Değerlendirmeler"
+  },
+  "actions": {
+    "writeReview": "Değerlendirme Yaz",
+    "reportFact": "Bilgi Ekle",
+    "seeAllReviews": "Tüm Değerlendirmeleri Gör",
+    "addFact": "Bilgi Ekle",
+    "claimOwnership": "Bu işletmenin sahibi misiniz? Sahiplenin"
+  },
+  "readMore": "devamını oku",
+  "helpfulCount": "{{count}} kişi faydalı buldu",
+  "notFound": "İşletme bulunamadı",
+  "empty": {
+    "noFacts": "Henüz bilgi eklenmemiş",
+    "noFactsSubtitle": "İlk bilgiyi siz ekleyin",
+    "noReviews": "Henüz değerlendirme yazılmamış",
+    "noReviewsSubtitle": "İlk değerlendirmeyi siz yazın"
+  }
+}

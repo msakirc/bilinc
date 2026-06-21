@@ -1,0 +1,74 @@
+{
+  "account": {
+    "title": "Account Settings",
+    "infoTitle": "Account Information",
+    "usernameNote": "Username cannot be changed",
+    "displayNamePlaceholder": "Your display name",
+    "saving": "Saving...",
+    "saveSuccessTitle": "Success",
+    "saveSuccessMessage": "Your profile has been updated.",
+    "saveErrorTitle": "Error",
+    "saveErrorMessage": "An error occurred while updating.",
+    "danger": {
+      "title": "Danger Zone",
+      "description": "If you delete your account, all your data will be permanently removed. This action cannot be undone.",
+      "deleteButton": "Delete My Account",
+      "confirmTitle": "Delete Account",
+      "confirmMessage": "Are you sure you want to permanently delete your account? This action cannot be undone.",
+      "confirmYes": "Yes, Delete",
+      "requestedTitle": "Account Deletion",
+      "requestedMessage": "Your account deletion request has been received. It will be processed as soon as possible."
+    }
+  },
+  "notifications": {
+    "title": "Notification Preferences",
+    "cardTitle": "Notification Types",
+    "saving": "Saving...",
+    "saveSuccessTitle": "Saved",
+    "saveSuccessMessage": "Your notification preferences have been updated.",
+    "saveErrorTitle": "Error",
+    "saveErrorMessage": "Preferences could not be saved. Please try again.",
+    "items": {
+      "newReviews": {
+        "label": "New reviews",
+        "description": "When your businesses receive a new review"
+      },
+      "factVerifications": {
+        "label": "Fact verifications",
+        "description": "When facts you shared are verified"
+      },
+      "voteNotifications": {
+        "label": "Vote notifications",
+        "description": "When your contributions receive votes"
+      },
+      "systemUpdates": {
+        "label": "System updates",
+        "description": "Important app updates and announcements"
+      }
+    }
+  },
+  "privacy": {
+    "title": "Privacy Settings",
+    "cardTitle": "Privacy Controls",
+    "saving": "Saving...",
+    "saveSuccessTitle": "Saved",
+    "saveSuccessMessage": "Your privacy preferences have been updated.",
+    "saveErrorTitle": "Error",
+    "saveErrorMessage": "Preferences could not be saved. Please try again.",
+    "info": "Your email address is never shared on Bilinç. All your contributions appear under your username.",
+    "items": {
+      "publicProfile": {
+        "label": "Make my profile public",
+        "description": "Your profile and reviews will be visible to everyone"
+      },
+      "showLocationInReviews": {
+        "label": "Show my location in reviews",
+        "description": "Your location will be shown on the reviews you write"
+      },
+      "hideActivityHistory": {
+        "label": "Hide my activity history",
+        "description": "Other users cannot see your activity history"
+      }
+    }
+  }
+}

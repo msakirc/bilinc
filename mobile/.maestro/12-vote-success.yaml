@@ -1,0 +1,20 @@
+# Happy path: a logged-in trusted user can cast a vote (the complement to 03,
+# which locks the guest -> login gate). Tapping an upvote must NOT bounce the
+# user to login and must keep them on the business detail screen.
+# Vote write is an idempotent upsert keyed to (user, item) -> re-runnable.
+appId: ${APP_ID}
+---
+- runFlow:
+    file: _login.yaml
+    env:
+      USERNAME: ${SEED_USER}
+      PASSWORD: ${SEED_PASS}
+- runFlow: _open-business.yaml
+# Cast an upvote on the first fact/review (id: <type>-vote-up-<itemId>).
+- tapOn:
+    id: ".*-vote-up-.*"
+# Logged-in vote must stay on detail, NOT redirect to the auth flow.
+- assertNotVisible:
+    id: "login-username"
+- assertVisible:
+    id: "business-write-review"

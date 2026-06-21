@@ -1,0 +1,31 @@
+{
+  "screenTitle": "Category",
+  "resultsTitle": "Results",
+  "loading": "Loading category...",
+  "resultsLoading": "Loading results...",
+  "placeCount_one": "{{formattedCount}} place",
+  "placeCount_other": "{{formattedCount}} places",
+  "detail": {
+    "description": "Discover the businesses and products in this category",
+    "subCategories": "Subcategories",
+    "topRated": "{{name}} - Top Rated",
+    "topRatedFact": "Highly rated business",
+    "seeAllResults": "See All Results"
+  },
+  "sort": {
+    "mostReviewed": "Most Reviewed",
+    "topRated": "Top Rated"
+  },
+  "empty": {
+    "noResultsSubtitle": "Try different filters",
+    "notFound": "Category not found",
+    "noBusinesses": "No businesses in this category yet"
+  },
+  "result": {
+    "reviewCount_one": "({{count}} review)",
+    "reviewCount_other": "({{count}} reviews)"
+  },
+  "breadcrumb": {
+    "home": "Home"
+  }
+}

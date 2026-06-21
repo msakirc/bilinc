@@ -1,0 +1,41 @@
+# Bug-lock: registering with an already-taken username is rejected at submit
+# (live availability check). Uses the seeded ${SEED_USER}. Non-destructive — no
+# account is created.
+appId: ${APP_ID}
+---
+- runFlow: _launch.yaml
+- scrollUntilVisible:
+    element:
+      text: "Zaten hesabın var mı? Giriş Yap"
+    direction: DOWN
+    visibilityPercentage: 20
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+- tapOn: "Zaten hesabın var mı? Giriş Yap"
+- tapOn:
+    id: "login-register"
+- tapOn:
+    id: "register-username"
+- inputText: ${SEED_USER}
+- tapOn:
+    id: "register-password"
+- inputText: "Test1234!"
+- tapOn:
+    id: "register-confirm-password"
+- inputText: "Test1234!"
+- hideKeyboard
+- tapOn:
+    id: "register-terms-checkbox"
+- tapOn:
+    id: "register-kvkk-checkbox"
+- scrollUntilVisible:
+    element:
+      id: "register-submit"
+    direction: DOWN
+    visibilityPercentage: 20
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+- tapOn:
+    id: "register-submit"
+# Availability check (debounced) ran while filling the form -> taken alert.
+- assertVisible: ".*kullanıcı adı zaten alınmış.*"

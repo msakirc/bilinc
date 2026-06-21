@@ -1,0 +1,12 @@
+{
+  "footer": {
+    "rightsReserved": "Tüm hakları saklıdır.",
+    "exploreHeading": "Keşfet",
+    "companyHeading": "Bilinç",
+    "legalHeading": "Yasal"
+  },
+  "theme": {
+    "light": "Açık tema",
+    "dark": "Koyu tema"
+  }
+}

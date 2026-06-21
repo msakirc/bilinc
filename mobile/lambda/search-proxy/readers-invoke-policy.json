@@ -1,0 +1,14 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "InvokeSearchProxyUrl",
+      "Effect": "Allow",
+      "Action": "lambda:InvokeFunctionUrl",
+      "Resource": "arn:aws:lambda:eu-central-1:515614487420:function:bilinc-search-proxy",
+      "Condition": {
+        "StringEquals": { "lambda:FunctionUrlAuthType": "AWS_IAM" }
+      }
+    }
+  ]
+}

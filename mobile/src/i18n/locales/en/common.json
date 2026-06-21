@@ -1,0 +1,125 @@
+{
+  "app": {
+    "name": "Bilinç",
+    "tagline": "Learn what they don't tell you."
+  },
+  "nav": {
+    "home": "Home",
+    "search": "Search",
+    "activity": "My Activity",
+    "activityTab": "Activity",
+    "profile": "Profile",
+    "businessPanel": "Business Panel",
+    "adminPanel": "Admin Panel",
+    "login": "Log In",
+    "register": "Sign Up",
+    "reportFact": "Report a Fact",
+    "menu": "Menu",
+    "accountMenu": "Account menu",
+    "discover": "Discover",
+    "categories": "Categories",
+    "facts": "Facts",
+    "allCategories": "All categories",
+    "searchPlaceholder": "Search businesses, products or brands",
+    "more": "More",
+    "logout": "Log Out",
+    "about": "About",
+    "privacy": "Privacy",
+    "terms": "Terms of Use",
+    "contact": "Contact",
+    "backToSite": "Back to Site",
+    "back": "Back"
+  },
+  "actions": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "submit": "Submit",
+    "retry": "Try Again",
+    "seeAll": "See All",
+    "viewMore": "View More",
+    "confirm": "Confirm",
+    "ok": "OK",
+    "close": "Close",
+    "continue": "Continue",
+    "enable": "Enable",
+    "search": "Search"
+  },
+  "labels": {
+    "username": "Username",
+    "displayName": "Display Name",
+    "password": "Password",
+    "reputation": "Reputation",
+    "credibility": "Credibility",
+    "active": "Active",
+    "joinDate": "Join Date",
+    "type": "Type"
+  },
+  "entityType": {
+    "business": "Business",
+    "product": "Product",
+    "brand": "Brand"
+  },
+  "verification": {
+    "pending": "Pending",
+    "verified": "Verified",
+    "disputed": "Disputed",
+    "needs_review": "Needs Review",
+    "retracted": "Retracted"
+  },
+  "credibility": {
+    "novice": "Novice",
+    "contributor": "Contributor",
+    "trusted": "Trusted",
+    "expert": "Expert"
+  },
+  "factCategory": {
+    "safety": "Safety",
+    "health": "Health",
+    "quality": "Quality",
+    "legal": "Legal",
+    "environmental": "Environmental",
+    "abuse": "Abuse",
+    "labor": "Labor Rights",
+    "other": "Other"
+  },
+  "userType": {
+    "consumer": "Consumer",
+    "business_owner": "Business Owner",
+    "admin": "Admin"
+  },
+  "date": {
+    "justNow": "just now",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "minutesAgo_one": "{{count}} minute ago",
+    "minutesAgo_other": "{{count}} minutes ago",
+    "hoursAgo_one": "{{count}} hour ago",
+    "hoursAgo_other": "{{count}} hours ago",
+    "daysAgo_one": "{{count}} day ago",
+    "daysAgo_other": "{{count}} days ago",
+    "weeksAgo_one": "{{count}} week ago",
+    "weeksAgo_other": "{{count}} weeks ago"
+  },
+  "empty": {
+    "noResults": "No results found",
+    "noActivity": "No activity yet",
+    "noBusinesses": "No businesses found yet",
+    "notReviewed": "Not yet reviewed"
+  },
+  "status": {
+    "loading": "Loading...",
+    "checking": "Checking..."
+  },
+  "notFound": {
+    "headerTitle": "Not Found",
+    "title": "Page not found",
+    "back": "Back to home"
+  },
+  "language": {
+    "label": "Language",
+    "turkish": "Turkish",
+    "english": "English"
+  }
+}

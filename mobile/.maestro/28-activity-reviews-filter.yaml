@@ -1,0 +1,14 @@
+# Activity tab "Değerlendirmeler" (reviews) filter — complements 11 (facts).
+appId: ${APP_ID}
+---
+- runFlow:
+    file: _login.yaml
+    env:
+      USERNAME: ${SEED_USER}
+      PASSWORD: ${SEED_PASS}
+- tapOn: "Aktivite"
+- assertVisible: "Aktivitelerim"
+- tapOn: "Değerlendirmeler"
+- assertVisible: "Aktivitelerim"
+- tapOn: "Tümü"
+- assertVisible: "Aktivitelerim"

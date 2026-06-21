@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GÜBİS - Güvensiz Ürün Portalı</title>
+    
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    <meta name="description" content="Ticaret Bakanlığı Güvensiz Ürün Bilgi Sistemi, gübis, Piyasa gözetimi ve denetimi PGD, tüketici hakları, tüketicinin korunması, bilgilen ticaret ekonomi sağlık bilim sanayi tarım epdk elektronik çevre zararlı riskli satıcı sağlayıcı CE sertifika" />
+
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122484448-1"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-122484448-1');
+    </script>
+
+    <link href="/Content/bootstrap.css" rel="stylesheet"/>
+<link href="/Content/font-awesome.css" rel="stylesheet"/>
+<link href="/Content/w3.css" rel="stylesheet"/>
+<link href="/Content/gubis.css" rel="stylesheet"/>
+
+    <script src="/Scripts/modernizr-2.6.2.js"></script>
+
+    <script src="/Scripts/jquery-3.3.1.js"></script>
+
+    <script src="/Scripts/jquery.unobtrusive-ajax.js"></script>
+
+    <script src="/Scripts/arfcommon.js"></script>
+
+</head>
+
+<body class="w3-white w3-content" style="max-width:1600px; background-color:whitesmoke !important;"> 
+
+    
+
+
+<style>
+    .tooltip{
+        max-width: 140px;
+    }
+
+    .tooltip-inner{
+        background-color: #dddddd;
+        border: 1px solid darkgray;
+        color: black;
+        font-weight: bold;
+    }
+</style>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left w3-border" style="z-index:3;width:300px;" id="mySidebar">
+    <div class="w3-container w3-white w3-padding w3-border-bottom" style="">
+        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-padding w3-hover-gray" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-cell">
+            <a href="/"><img src="/Images/gubis.png" style="width:90%;" class="w3-round"></a>
+        </div>
+        <div class="w3-cell w3-cell-middle w3-text-indigo" style="font-size:1vw;">
+            <h4 class="w3-center"><b>Güvenliğiniz,</b></h4>
+            <h4 class="w3-center"><b>Önceliğimizdir.</b></h4>
+        </div>
+    </div>
+    <div class="w3-container w3-white w3-border-bottom">
+        <div class="w3-row-cell w3-cell-middle w3-text-dark-gray" style="font-size:1vw; font-weight:bold;">
+            <a href="/"><h6 class="w3-center">Güvensiz Ürün Bilgi Sistemi</h6></a>
+        </div>
+    </div>
+    <br />
+    <div class="w3-container w3-white w3-border-bottom">
+        <div class="w3-row-cell w3-cell-middle" style="">
+            <div class="w3-center"><a href="https://guvensizurun.gtb.gov.tr" class="w3-btn w3-blue" target="_blank">KURUM GİRİŞİ</a></div>
+        </div>
+    </div>
+    <br />
+    <div class="w3-container">
+        <h5 class="w3-center gbs-bold">BAKANLIKLAR TARAFINDAN</h5>
+        <h5 class="w3-center gbs-bold">YAPILAN BİLDİRİMLER</h5>
+            <div class="w3-container w3-center w3-white w3-half" style="padding: 4px;" data-toggle="tooltip" data-placement="top" title="TİCARET BAKANLIĞI">
+                <a href="/Bildirim/KurumBazli?KurumTipi=1" class="w3-btn w3-white w3-border w3-border-blue w3-round-large w3-hover-opacity" style="width: 100%; padding: 0px;">
+                    <img src="/Images/GUMRUK.png" style="height: 64px; width: auto; max-width: 100%;">
+                </a>
+            </div>
+            <div class="w3-container w3-center w3-white w3-half" style="padding: 4px;" data-toggle="tooltip" data-placement="top" title="SANAYİ VE TEKNOLOJİ BAKANLIĞI">
+                <a href="/Bildirim/KurumBazli?KurumTipi=2" class="w3-btn w3-white w3-border w3-border-blue w3-round-large w3-hover-opacity" style="width: 100%; padding: 0px;">
+                    <img src="/Images/SANAYI.png" style="height: 64px; width: auto; max-width: 100%;">
+                </a>
+            </div>
+            <div class="w3-container w3-center w3-white w3-half" style="padding: 4px;" data-toggle="tooltip" data-placement="top" title="SAĞLIK BAKANLIĞI">
+                <a href="/Bildirim/KurumBazli?KurumTipi=3" class="w3-btn w3-white w3-border w3-border-blue w3-round-large w3-hover-opacity" style="width: 100%; padding: 0px;">
+                    <img src="/Images/SAGLIK.png" style="height: 64px; width: auto; max-width: 100%;">
+                </a>
+            </div>
+            <div class="w3-container w3-center w3-white w3-half" style="padding: 4px;" data-toggle="tooltip" data-placement="top" title="TARIM VE ORMAN BAKANLIĞI">
+                <a href="/Bildirim/KurumBazli?KurumTipi=4" class="w3-btn w3-white w3-border w3-border-blue w3-round-large w3-hover-opacity" style="width: 100%; padding: 0px;">
+                    <img src="/Images/TARIM.png" style="height: 64px; width: auto; max-width: 100%;">
+                </a>
+            </div>
+            <div class="w3-container w3-center w3-white w3-half" style="padding: 4px;" data-toggle="tooltip" data-placement="top" title="&#199;EVRE VE ŞEHİRCİLİK BAKANLIĞI">
+                <a href="/Bildirim/KurumBazli?KurumTipi=5" class="w3-btn w3-white w3-border w3-border-blue w3-round-large w3-hover-opacity" style="width: 100%; padding: 0px;">
+                    <img src="/Images/CEVRE.png" style="height: 64px; width: auto; max-width: 100%;">
+                </a>
+            </div>
+            <div class="w3-container w3-center w3-white w3-half" style="padding: 4px;" data-toggle="tooltip" data-placement="top" title="&#199;ALIŞMA VE SOSYAL G&#220;VENLİK BAKANLIĞI">
+                <a href="/Bildirim/KurumBazli?KurumTipi=6" class="w3-btn w3-white w3-border w3-border-blue w3-round-large w3-hover-opacity" style="width: 100%; padding: 0px;">
+                    <img src="/Images/CSGB.png" style="height: 64px; width: auto; max-width: 100%;">
+                </a>
+            </div>
+            <div class="w3-container w3-center w3-white w3-half" style="padding: 4px;" data-toggle="tooltip" data-placement="top" title="ULAŞTIRMA VE ALTYAPI  BAKANLIĞI">
+                <a href="/Bildirim/KurumBazli?KurumTipi=7" class="w3-btn w3-white w3-border w3-border-blue w3-round-large w3-hover-opacity" style="width: 100%; padding: 0px;">
+                    <img src="/Images/ULASTIRMA.png" style="height: 64px; width: auto; max-width: 100%;">
+                </a>
+            </div>
+            <div class="w3-container w3-center w3-white w3-half" style="padding: 4px;" data-toggle="tooltip" data-placement="top" title="BİLGİ TEKNOLOJİLERİ VE İLETİŞİM KURUMU">
+                <a href="/Bildirim/KurumBazli?KurumTipi=9" class="w3-btn w3-white w3-border w3-border-blue w3-round-large w3-hover-opacity" style="width: 100%; padding: 0px;">
+                    <img src="/Images/BTK.png" style="height: 64px; width: auto; max-width: 100%;">
+                </a>
+            </div>
+    </div>
+    <br />
+    <hr class="w3-text-light-gray" style="border: 0.5px solid;"/>
+    <div class="w3-panel w3-large w3-center w3-text-red" style="font-size: 36px !important;">
+        
+        <a target="_blank" href="https://facebook.com/sharer.php?u=http://gubis.gov.tr">
+            
+            <img src="/Images/sc-facebook.png" class="w3-hover-opacity" />
+        </a>
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=G&#252;vensiz &#220;r&#252;n Bilgi Sistemi&amp;url=http://gubis.gov.tr">
+            <img src="/Images/sc-twitter.png" class="w3-hover-opacity" />
+        </a>
+        <a target="_blank" href="/Genel/Rss">
+            <img src="/Images/sc-rss.png" class="w3-hover-opacity" />
+        </a>
+    </div>
+    <div class="w3-panel w3-center">
+
+
+<div>
+    <h6>Online Ziyaretçi Sayısı</h6>
+</div>
+<div class="counter">
+        <span>0</span>
+        <span>0</span>
+        <span>0</span>
+        <span>0</span>
+        <span>0</span>
+        <span>0</span>
+        <span>1</span>
+        <span>9</span>
+</div>
+<br />
+<div>
+    <h6>Toplam Ziyaretçi Sayısı</h6>
+</div>
+<div class="counter">
+        <span>0</span>
+        <span>7</span>
+        <span>5</span>
+        <span>1</span>
+        <span>1</span>
+        <span>7</span>
+        <span>6</span>
+        <span>4</span>
+</div>
+<br />
+    </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+        
+
+
+<!-- Header -->
+<header id="portfolio">
+    
+    <a href="/"><img src="/Images/gubis.png" style="width:65px;" class="w3-round w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+        
+        <h2 class="w3-text-indigo" style="color:#78a575;"><b>BİLDİRİM DETAYI</b></h2>
+        <div class="w3-section w3-bottombar w3-padding-16">
+            <div class="w3-cell w3-mobile" style="padding-bottom: 4px;">
+                <a href="/" class="w3-btn w3-blue"><i class="fa fa-clock-o w3-margin-right"></i>Son 10 Bildirim</a>
+                <a href="/Bildirim/CokIncelenen" class="w3-btn w3-blue"><i class="fa fa-calendar-plus-o w3-margin-right"></i>En Çok İncelenen</a>
+            </div>
+            <div class="w3-cell w3-mobile" style="padding-bottom: 4px; padding-left: 2px;">
+                <a href="/Bildirim/Sorgu" class="w3-btn w3-blue"><i class="fa fa-search w3-margin-right"></i>Hızlı Arama</a>
+                <a href="/Bildirim/DetaySorgu" class="w3-btn w3-blue"><i class="fa fa-search-plus w3-margin-right"></i>Detaylı Arama</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+        
+
+
+<div class="w3-container w3-margin-bottom w3-white">
+    <div class="w3-container w3-padding-16">
+        <div class="w3-border w3-hover-opacity">
+                    <div class="w3-center" style="width:100%;"><img class="mySlides gbs-img" src="/Bildirim/MedyaGoster?rid=11064"></div>
+        </div>
+        <div class="w3-cell-row w3-section w3-border" style="width: 100%;">
+            <div class="w3-cell" style="width: 40px; vertical-align: top;">
+                <div class="w3-content" style="height: 120px;">
+                    <button class="w3-button" style="width: 100%; height: 100%;">&#10094;</button>
+                </div>
+            </div>
+            <div class="w3-cell w3-rest">
+                    <div class="w3-cell w3-border gbs-img-cell" style="height: 120px;">
+                        <img class="w3-opacity gbs-img-prev gbs-img-thumb" src="/Bildirim/MedyaGoster?rid=11064" onclick="currentDiv(1)">
+                    </div>
+
+            </div>
+            <div class="w3-cell" style="width: 40px; vertical-align: top;">
+                <div class="w3-content" style="height: 120px;">
+                    <button class="w3-button" style="width: 100%; height: 100%;">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <a class="w3-btn w3-blue" href="/">Geri Dön</a>
+        <div class="w3-right">
+            <a class="w3-btn w3-blue w3-disabled" href="javascript:void(0);">&#10094; Önceki Bildirim</a>
+            <a class="w3-btn w3-blue w3-disabled" href="javascript:void(0);">Sonraki  Bildirim &#10095;</a>
+        </div>
+    </div>
+    <div class="w3-container w3-padding-16">
+        <ul class="w3-ul w3-border">
+            <li class="w3-blue-gray w3-text-white">
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell w3-border-right" style="font-weight: bold;"><p>BİLDİRİM NO</p></div>
+                    <div class="w3-container w3-cell"><p>2023100001</p></div>
+                </div>
+            </li>
+            <li class="w3-blue-gray w3-text-white">
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell w3-border-right" style="font-weight: bold;"><p>BİLDİRİM TARİHİ</p></div>
+                    <div class="w3-container w3-cell"><p>05.10.2023</p></div>
+                </div>
+            </li>
+
+            <li>
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell w3-border-right" style="font-weight: bold;"><p>BİLDİRİM YAPAN KURUM</p></div>
+                    <div class="w3-container w3-cell"><p>Ticaret Bakanlığı</p></div>
+                </div>
+            </li>
+            <li>
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell w3-border-right" style="font-weight: bold;"><p>ÜRÜN GRUBU</p></div>
+                    <div class="w3-container w3-cell"><p>Ara&#231;lar</p></div>
+                </div>
+            </li>
+            <li>
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell w3-border-right" style="font-weight: bold;"><p>FİRMA</p></div>
+                    <div class="w3-container w3-cell"><p>Global Gıda Pazarlama Ve Dış Ticaret Ltd. Şti.</p></div>
+                </div>
+            </li>
+            <li>
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell w3-border-right" style="font-weight: bold;"><p>FİRMA ADRESİ</p></div>
+                    <div class="w3-container w3-cell"><p>Pınar Mahallesi 19 Mayıs Bulvarı No:30 Esenyurt/İstanbul</p></div>
+                </div>
+            </li>
+            <li>
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell w3-border-right" style="font-weight: bold;"><p>MARKA</p></div>
+                    <div class="w3-container w3-cell"><p>Global</p></div>
+                </div>
+            </li>
+            <li>
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell w3-border-right" style="font-weight: bold;"><p>MODEL / SERİ NO / PARTİ NO</p></div>
+                    <div class="w3-container w3-cell"><p>Copter D/62</p></div>
+                </div>
+            </li>
+            <li>
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell w3-border-right" style="font-weight: bold;"><p>ÜRÜN ETİKET ADI</p></div>
+                    <div class="w3-container w3-cell"><p></p></div>
+                </div>
+            </li>
+            <li>
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell w3-border-right" style="font-weight: bold;"><p>ÜRÜN TANIMI</p></div>
+                    <div class="w3-container w3-cell"><p>Helikopter Oyuncak</p></div>
+                </div>
+            </li>
+            <li>
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell w3-border-right" style="font-weight: bold;"><p>MENŞE ÜLKE</p></div>
+                    <div class="w3-container w3-cell"><p>&#199;in (Prc)</p></div>
+                </div>
+            </li>
+            <li>
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell w3-border-right" style="font-weight: bold;"><p>TAŞIDIĞI RİSKLER</p></div>
+                    <div class="w3-container w3-cell"><p>Boğulma (Dışarıdan Akciğerlere Doğru Olan Hava Akışının Mekanik Şekilde Engellenmesi.)</p></div>
+                </div>
+            </li>
+            
+            <li>
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell w3-border-right" style="font-weight: bold;"><p>GÜVENSİZLİK NEDENİ</p></div>
+                    <div class="w3-container w3-cell"><p>Oyuncak &#220;zerindeki Jelatinli K&#252;&#231;&#252;k Kısımların Belirli Kuvvette Koparak K&#252;&#231;&#252;k Par&#231;a Silindirine Girmiş Olması Nedeniyle  &#220;r&#252;n&#252;n G&#252;vensiz Olduğu Sonucuna Varılmıştır.</p></div>
+                </div>
+            </li>
+            
+            <li>
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell w3-border-right" style="font-weight: bold;"><p>ALINAN ÖNLEM</p></div>
+                    <div class="w3-container w3-cell"><p>Piyasaya Arzın Yasaklanması Ve Toplatma</p></div>
+                </div>
+            </li>
+            <li>
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell w3-border-right" style="font-weight: bold;"><p>ALINAN ÖNLEMİN TARİHİ</p></div>
+                    <div class="w3-container w3-cell"><p></p></div>
+                </div>
+            </li>            
+
+            <li>
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-cell w3-border-right" style="font-weight: bold;"><p>İLGİLİ MEVZUAT</p></div>
+                    <div class="w3-container w3-cell"><p>Oyuncak G&#252;venliği Y&#246;netmeliği
+7223 &#220;r&#252;n G&#252;venliği Ve Teknik D&#252;zenlemeler Kanunu
+Ticaret Bakanlığı Piyasa G&#246;zetimi Ve Denetimi Y&#246;netmeliği</p></div>
+                </div>
+            </li>
+
+
+
+        </ul>
+    </div>
+    <div class="w3-container">
+        <a class="w3-btn w3-blue" href="/">Geri Dön</a>
+        <div class="w3-right">
+            <a class="w3-btn w3-blue w3-disabled" href="javascript:void(0);">&#10094; Önceki Bildirim</a>
+            <a class="w3-btn w3-blue w3-disabled" href="javascript:void(0);">Sonraki  Bildirim &#10095;</a>
+        </div>
+    </div>
+    <br />
+</div>
+
+<div id="modalImgPrev" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-light-gray w3-padding-16">
+        <div style="height: 50px;">
+            <span class="w3-display-topleft w3-text-blue-gray w3-border" style="padding: 20px; width: 100%;">RESİM ÖN İZLEME</span>
+            <span id="btnCloseModal" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Pencereyi Kapat">&times;</span>
+        </div>
+        <div class="w3-card w3-margin w3-light-gray">
+            <img class="gbs-img-prev" id="imgPrev">
+        </div>        
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $("#modalImgPrev").click(function () {
+            $(this).toggle(false);
+        });
+
+        $(".gbs-img").click(function () {
+            $("#imgPrev").attr("src", this.src);
+            $("#modalImgPrev").toggle(true);
+        });
+
+        $("#btnCloseModal").click(function () {
+            $("#modalImgPrev").toggle(false);
+        });
+    });
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("gbs-img-prev");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+      }
+      x[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " w3-opacity-off";
+    }
+</script>
+
+        
+<!-- Footer -->
+<footer class="w3-container w3-padding-24 w3-blue-gray">
+    <div class="w3-row-padding">
+        <div class="w3-third">
+            <div class="w3-margin">
+                <h3>GÜBİS HAKKINDA</h3>
+                <ul class="w3-ul" style="text-align: justify;">
+                    <li class="w3-bar"><p><span style="font-weight:bold;">1- </span>Güvensiz Ürün Bilgi Sistemi (GÜBİS), ülkemizde piyasa gözetimi ve denetimi faaliyeti gerçekleştiren yetkili kuruluşlar tarafından güvensizliği tespit edilen ürünlerin ilan edildiği bir platformdur.</p></li>
+                    <li class="w3-bar"><p><span style="font-weight:bold;">2- </span>Bu platformda yer alan güvensizlik bildirimleri sadece bildirim konusu ürüne ilişkin tespiti içermekte olup, üretici firmanın diğer ürünlerine ilişkin bir tespit içermemektedir.</p></li>
+                </ul>
+                <a class="w3-right" href="/Genel/Hukumler">Devamı için tıklayınız</a>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-margin">
+                
+                <ul class="w3-ul">
+                    <li class="w3-bar w3-padding-16">
+                        <a href="/Genel/Bilgi">
+                            <img src="/Images/guvensizurun.png" class="w3-left w3-margin-right" style="width:50px;">
+                            <span>Güvensiz Ürün Nedir?</span>
+                        </a>
+                    </li>
+                    <li class="w3-bar w3-padding-16">
+                        <a href="/Genel/UrunGrup">
+                            <img src="/Images/urunagaci.png" class="w3-left w3-margin-right" style="width:50px;">
+                            <span>Yetkili PGD Kuruluşları ve Sorumlu Oldukları Ürün Grupları</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-margin">
+                <h3>İLGİLİ BAĞLANTILAR</h3>
+
+                <ul class="w3-ul" style="">
+                    <li class="w3-bar"><a target="_blank" href="https://ec.europa.eu/consumers/consumers_safety/safety_products/rapex/alerts/?event=main.listNotifications">RAPEX</a></li>
+                    <li class="w3-bar"><a target="_blank" href="https://globalrecalls.oecd.org/front/index.html#/recalls">OECD Global Recalls Portal</a></li>
+                    <li class="w3-bar"><a target="_blank" href="http://www.tuketiciakademisi.gov.tr">Tüketici Akademisi</a></li>
+                    <li class="w3-bar"><a target="_blank" href="http://www.ticaret.gov.tr/">Ticaret Bakanlığı</a></li>
+                    <li class="w3-bar"><a target="_blank" href="http://www.tarim.gov.tr">Tarım ve Orman Bakanlığı</a></li>
+                    <li class="w3-bar"><a target="_blank" href="http://www.sanayi.gov.tr">Sanayi ve Teknoloji Bakanlığı</a></li>
+                    <li class="w3-bar"><a target="_blank" href="http://www.saglik.gov.tr">Sağlık Bakanlığı</a></li>
+                    <li class="w3-bar"><a target="_blank" href="http://www.csgb.gov.tr">Çalışma ve Sosyal Güvenlik Bakanlığı</a></li>
+                    <li class="w3-bar"><a target="_blank" href="http://www.csb.gov.tr">Çevre ve Şehircilik Bakanlığı</a></li>
+                    <li class="w3-bar"><a target="_blank" href="http://www.ubak.gov.tr">Ulaştırma ve Altyapı Bakanlığı</a></li>
+                    <li class="w3-bar"><a target="_blank" href="http://www.epdk.gov.tr">Enerji Piyasası Düzenleme Kurumu</a></li>
+                    <li class="w3-bar"><a target="_blank" href="http://www.btk.gov.tr">Bilgi Teknolojileri ve İletişim Kurumu</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+        <!-- End page content -->
+    </div>
+    
+    <!-- Modal Start here-->
+    <div id="pnlLoading" class="w3-modal" style="z-index: 9999;">
+        <div class="w3-modal-content" style="width:180px;">
+            <div class="w3-panel w3-card-2 w3-blue-gray w3-padding-16">
+                <div class="w3-half w3-text-white">
+                    <span><i class="fa fa-spinner w3-spin" style="font-size:64px;"></i></span>
+                </div>
+                <div class="w3-half w3-text-white" style="padding-top: 8px;">
+                    <span class="w3-display-top">Lütfen Bekleyin!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pnlLoadingAjax" class="w3-modal" style="z-index: 9999;">
+        <div class="w3-modal-content" style="width:180px;">
+            <div class="w3-panel w3-card-2 w3-blue-gray w3-padding-16">
+                <div class="w3-half w3-text-white">
+                    <span><i class="fa fa-spinner w3-spin" style="font-size:64px;"></i></span>
+                </div>
+                <div class="w3-half w3-text-white" style="padding-top: 8px;">
+                    <span class="w3-display-top">Lütfen Bekleyin!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pnlCustom" class="w3-modal" style="z-index: 9000;">
+        <div class="w3-modal-content modal-content w3-card-4 w3-animate-zoom">
+            <div class="modal-header w3-border w3-light-grey" style="height: 54px;">
+                <span class="w3-display-topleft w3-text-blue-gray modal-title" style="padding: 20px; width: 100%;">Bilgi</span>
+                <span class="w3-button w3-xlarge w3-hover-red w3-display-topright w3-border modal-close" data-dismiss="modal" title="Kapat">&times;</span>
+            </div>
+            <div class="w3-container w3-padding-16 w3-modal-body modal-body" style="min-height: 100px;">
+
+            </div>
+            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                <div class="w3-right">
+                    <button id="pnlCustomCancel" class="w3-button w3-teal modal-close">Vazgeç</button>
+                    <button id="pnlCustomOK" class="w3-button w3-blue-gray">Tamam</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pnlInfo" class="w3-modal" style="z-index: 9999;">
+        <div class="w3-modal-content modal-content w3-card-4 w3-animate-zoom">
+            <div class="modal-header w3-border w3-light-grey" style="height: 54px;">
+                <span class="w3-display-topleft modal-title" style="padding: 20px; width: 100%;">Bilgi</span>
+                <span class="w3-button w3-xlarge w3-hover-red w3-display-topright w3-border modal-close" data-dismiss="modal" title="Kapat">&times;</span>
+            </div>
+            <div class="w3-container w3-padding-16 w3-modal-body modal-body" style="min-height: 100px;">
+
+            </div>
+            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                <div class="w3-right">
+                    <button id="pnlInfoCancel" class="w3-button w3-teal modal-close">Vazgeç</button>
+                    <button id="pnlInfoOK" class="w3-button w3-blue-gray">Tamam</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Scripts/jquery-3.3.1.js"></script>
+
+    <script src="/Scripts/bootstrap.js"></script>
+<script src="/Scripts/respond.js"></script>
+
+
+
+    <script>
+    var isFirst = Number('1');
+
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+
+    function showWarning() {
+        var options = {
+            showCancelButton: false,
+            contentHtml: '<div><p style="font-size: larger;">Bu platformda yer alan güvensizlik bildirimleri sadece bildirim konusu ürüne ilişkin tespiti içermekte olup, <span style="text-decoration: underline;">üretici firmanın diğer ürünlerine ilişkin bir tespit içermemektedir.</span></p></div>',
+            title: '<div class="w3-row w3-center w3-text-red gbs-bold" style="font-size: larger;">ÖNEMLİ!</div>',
+            width: "500"
+        };
+
+        showCustomPanel(options);
+    }
+
+    $(function () {
+        if(isFirst)
+            showWarning();
+    });
+    </script>
+    
+    
+</body>
+</html>

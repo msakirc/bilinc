@@ -1,0 +1,32 @@
+# CONTENT regression guard for the business detail screen — CATALOG fields only
+# (name, rating, category badge), from DynamoDB; no auth needed.
+# The existing detail flows assert only testIDs (buttons/sections), so a card
+# rendering a placeholder image, an empty name, or an "undefined" badge would
+# still pass. This asserts the REAL catalog row actually renders.
+#
+# Catches two real bugs found 2026-06-19 (both masked by the removed mock
+# fallback, exposed by 3b4daa3):
+#   1. getListing crashed in release ("Symbol(node-only)") -> detail showed
+#      "İşletme bulunamadı". Fixed via hand-rolled SigV4 DynamoDB transport.
+#   2. category rendered as object {slug,primary} -> React child crash.
+# Facts/reviews CONTENT is asserted in 32 (needs Supabase).
+appId: ${APP_ID}
+---
+- runFlow: _guest.yaml
+- tapOn: "Ara"
+- tapOn:
+    id: "search-input"
+- inputText: ${SEARCH_TERM}
+- hideKeyboard
+- extendedWaitUntil:
+    visible:
+      id: "search-result-.*"
+    timeout: 30000
+- tapOn:
+    id: "search-result-.*"
+# Name + rating + category sit at the top of the detail, visible right after open.
+- extendedWaitUntil:
+    visible: "Test Kafe"
+    timeout: 30000
+- assertVisible: "4.5"
+- assertVisible: "restoran-lokanta"

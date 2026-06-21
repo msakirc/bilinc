@@ -1,0 +1,22 @@
+# Profile language pill toggles the UI locale tr -> en (i18next + useLanguage).
+# After the toggle the tab bar + pill render English strings.
+appId: ${APP_ID}
+---
+- runFlow:
+    file: _login.yaml
+    env:
+      USERNAME: ${SEED_USER}
+      PASSWORD: ${SEED_PASS}
+- tapOn: "Profil"
+# Language row sits in the Settings card; pill shows the current language name.
+- scrollUntilVisible:
+    element:
+      text: "Türkçe"
+    direction: DOWN
+    visibilityPercentage: 60
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+- tapOn: "Türkçe"
+# UI re-renders in English: tab label + pill flip.
+- assertVisible: "Profile"
+- assertVisible: "English"

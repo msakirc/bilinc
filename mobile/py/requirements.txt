@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+boto3
+supabase
+python-dotenv
+pytest

@@ -1,0 +1,200 @@
+{
+  "sidebar": {
+    "role": "Yönetici",
+    "dashboard": "Panel",
+    "users": "Kullanıcılar",
+    "listings": "İşletmeler",
+    "reviews": "Yorumlar",
+    "facts": "Bilgiler",
+    "claims": "Talepler",
+    "edits": "Düzenlemeler"
+  },
+  "dashboard": {
+    "title": "Yönetim Paneli",
+    "stats": {
+      "total_users": "Toplam Kullanıcı",
+      "active_users_30d": "Aktif Kullanıcı (30g)",
+      "total_listings": "Toplam İşletme",
+      "pending_listings": "Bekleyen İşletme",
+      "total_reviews": "Toplam Yorum",
+      "reviews_today": "Bugünün Yorumları",
+      "total_facts": "Toplam Bilgi",
+      "pending_claims": "Bekleyen Talep",
+      "pending_edits": "Bekleyen Düzenleme"
+    }
+  },
+  "pagination": {
+    "page": "Sayfa {{page}}",
+    "previous": "Önceki",
+    "next": "Sonraki"
+  },
+  "users": {
+    "title": "Kullanıcılar",
+    "columns": {
+      "username": "Kullanıcı Adı",
+      "displayName": "Görünen Ad",
+      "type": "Tür",
+      "reputation": "İtibar",
+      "credibility": "Güvenilirlik",
+      "active": "Aktif",
+      "joinDate": "Kayıt Tarihi"
+    },
+    "empty": "Kullanıcı bulunamadı"
+  },
+  "listings": {
+    "title": "İşletmeler",
+    "tabs": {
+      "all": "Tümü",
+      "active": "Aktif",
+      "pending": "Beklemede",
+      "removed": "Kaldırılmış"
+    },
+    "status": {
+      "active": "Aktif",
+      "pending": "Beklemede",
+      "removed": "Kaldırılmış"
+    },
+    "columns": {
+      "name": "İşletme Adı",
+      "type": "Tür",
+      "status": "Durum",
+      "city": "Şehir",
+      "rating": "Puan",
+      "reviews": "Yorum",
+      "createdBy": "Oluşturan",
+      "date": "Tarih"
+    },
+    "empty": "İşletme bulunamadı"
+  },
+  "reviews": {
+    "title": "Yorumlar",
+    "tabs": {
+      "all": "Tümü",
+      "flagged": "İşaretli",
+      "active": "Aktif",
+      "hidden": "Gizli",
+      "removed": "Kaldırılmış"
+    },
+    "status": {
+      "active": "Aktif",
+      "hidden": "Gizli",
+      "removed": "Kaldırılmış"
+    },
+    "columns": {
+      "listing": "İşletme",
+      "user": "Kullanıcı",
+      "rating": "Puan",
+      "content": "İçerik",
+      "status": "Durum",
+      "flagged": "İşaretli",
+      "date": "Tarih"
+    },
+    "flagged": {
+      "yes": "Evet",
+      "no": "Hayır"
+    },
+    "empty": "Yorum bulunamadı"
+  },
+  "facts": {
+    "title": "Bilgiler",
+    "tabs": {
+      "all": "Tümü",
+      "flagged": "İşaretli",
+      "pending": "Beklemede",
+      "verified": "Doğrulanmış",
+      "disputed": "Tartışmalı"
+    },
+    "verification": {
+      "pending": "Beklemede",
+      "verified": "Doğrulanmış",
+      "disputed": "Tartışmalı",
+      "retracted": "Geri Çekilmiş"
+    },
+    "columns": {
+      "listing": "İşletme",
+      "user": "Kullanıcı",
+      "category": "Kategori",
+      "statement": "İfade",
+      "verificationStatus": "Doğrulama Durumu",
+      "flagged": "İşaretli",
+      "date": "Tarih"
+    },
+    "flagged": {
+      "yes": "Evet",
+      "no": "Hayır"
+    },
+    "empty": "Bilgi bulunamadı"
+  },
+  "claims": {
+    "title": "Talepler",
+    "role": {
+      "owner": "Sahip",
+      "manager": "Yönetici",
+      "employee": "Çalışan"
+    },
+    "columns": {
+      "listing": "İşletme",
+      "user": "Kullanıcı",
+      "role": "Rol",
+      "verificationMethod": "Doğrulama Yöntemi",
+      "requestedAt": "Talep Tarihi",
+      "actions": "İşlemler"
+    },
+    "tabs": {
+      "pending": "Bekleyen",
+      "verified": "Doğrulanmış"
+    },
+    "document": "Belge",
+    "watchVideo": "İzle",
+    "taxNumber": "VKN: {{value}}",
+    "approve": "Onayla",
+    "reject": "Reddet",
+    "revokeAction": "Doğrulamayı geri al",
+    "empty": "Bekleyen talep bulunamadı",
+    "verifiedEmpty": "Doğrulanmış talep bulunamadı",
+    "reconciliation": {
+      "title": "Doğrulama Detayları",
+      "taxNumber": "VKN",
+      "role": "Rol",
+      "gps": "GPS Koordinatları"
+    },
+    "rejectModal": {
+      "title": "Talebi Reddet",
+      "reasonPlaceholder": "Red nedeni (isteğe bağlı)"
+    },
+    "revokeModal": {
+      "title": "Doğrulamayı Geri Al",
+      "confirm": "Geri Al",
+      "reasonPlaceholder": "Gerekçe (isteğe bağlı)"
+    }
+  },
+  "edits": {
+    "title": "Düzenlemeler",
+    "fields": {
+      "name": "İşletme Adı",
+      "description": "Açıklama",
+      "address_line": "Adres",
+      "city_code": "Şehir",
+      "entity_type": "Tür",
+      "category_id": "Kategori",
+      "phone": "Telefon",
+      "website": "Web Sitesi"
+    },
+    "columns": {
+      "listing": "İşletme",
+      "user": "Kullanıcı",
+      "field": "Alan",
+      "oldValue": "Eski Değer",
+      "newValue": "Yeni Değer",
+      "date": "Tarih",
+      "actions": "İşlemler"
+    },
+    "approve": "Onayla",
+    "reject": "Reddet",
+    "empty": "Bekleyen düzenleme bulunamadı",
+    "rejectModal": {
+      "title": "Düzenlemeyi Reddet",
+      "reasonPlaceholder": "Red nedeni (isteğe bağlı)"
+    }
+  }
+}

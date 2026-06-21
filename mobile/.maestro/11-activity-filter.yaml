@@ -1,0 +1,18 @@
+# Logged-in user opens the Activity tab, sees the contributions screen, and
+# switches the filter to the "Gerçekler" (facts) tab. Locks the activity-tab
+# navigation + filter path (previously untested). Read-only.
+appId: ${APP_ID}
+---
+- runFlow:
+    file: _login.yaml
+    env:
+      USERNAME: ${SEED_USER}
+      PASSWORD: ${SEED_PASS}
+# Bottom-tab label is "Aktivite"; the screen title is "Aktivitelerim".
+- tapOn: "Aktivite"
+- assertVisible: "Aktivitelerim"
+- assertVisible: "Tümü"
+- assertVisible: "Toplam Güvenilirlik Puanı"
+# Switch the filter to the facts tab and confirm we stay on the screen.
+- tapOn: "Gerçekler"
+- assertVisible: "Aktivitelerim"

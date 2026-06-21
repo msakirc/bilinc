@@ -1,0 +1,37 @@
+{
+  "claimedBadge": "Verified",
+  "rate": "Rate",
+  "reviewCount": "{{count}} reviews",
+  "score": "{{count}} points",
+  "osmAttribution": "Location data: © OpenStreetMap contributors",
+  "ownerResponse": "BUSINESS RESPONSE",
+  "tagsis": {
+    "title": "Adulteration Warning",
+    "official": "OFFICIAL",
+    "defaultStatement": "There is an official adulteration record related to this business/product.",
+    "source": "Source: Republic of Türkiye Ministry of Agriculture and Forestry"
+  },
+  "sections": {
+    "facts": "Facts",
+    "reviews": "Reviews",
+    "ratingDistribution": "Rating Distribution",
+    "factsCount": "Facts",
+    "reviewsCount": "Reviews"
+  },
+  "actions": {
+    "writeReview": "Write a Review",
+    "reportFact": "Report a Fact",
+    "seeAllReviews": "See All Reviews",
+    "addFact": "Add Fact",
+    "claimOwnership": "Do you own this business? Claim it"
+  },
+  "readMore": "read more",
+  "helpfulCount": "{{count}} people found this helpful",
+  "notFound": "Business not found",
+  "empty": {
+    "noFacts": "No facts added yet",
+    "noFactsSubtitle": "Be the first to add a fact",
+    "noReviews": "No reviews written yet",
+    "noReviewsSubtitle": "Be the first to write a review"
+  }
+}

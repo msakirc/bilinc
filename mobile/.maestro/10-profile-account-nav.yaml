@@ -1,0 +1,33 @@
+# Logged-in user opens Profile, sees reputation stats + settings, then
+# navigates into Account settings (settings/account route — previously untested).
+# Read-only: stops before editing/saving anything.
+appId: ${APP_ID}
+---
+- runFlow:
+    file: _login.yaml
+    env:
+      USERNAME: ${SEED_USER}
+      PASSWORD: ${SEED_PASS}
+- tapOn: "Profil"
+# Profile screen rendered: header + stats + settings sections.
+- assertVisible: "@${SEED_USER}"
+- assertVisible: "İtibar İstatistikleri"
+# Drill into Account settings (the row label under the Settings section,
+# below the fold -> scroll brings both the "Ayarlar" header and the row up).
+- scrollUntilVisible:
+    element:
+      text: "Hesap Ayarları"
+    direction: DOWN
+    visibilityPercentage: 40
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+- tapOn: "Hesap Ayarları"
+# Account screen: read-only username + the danger zone -> navigation landed.
+- assertVisible: "Hesap Bilgileri"
+- scrollUntilVisible:
+    element:
+      text: "Tehlikeli Bölge"
+    direction: DOWN
+    visibilityPercentage: 30
+    waitToSettleTimeoutMs: 1000
+- assertVisible: "Hesabımı Sil"

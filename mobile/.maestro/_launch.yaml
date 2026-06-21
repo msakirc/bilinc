@@ -1,0 +1,10 @@
+# Subflow: cold-launch to the welcome screen (logged out, guest cleared).
+appId: ${APP_ID}
+tags:
+  - subflow
+---
+- launchApp:
+    clearState: true
+- assertVisible: "Bilinç"
+# "Başla"/"Giriş Yap"/"Misafir" sit below the value cards in the welcome
+# ScrollView; entry subflows (_guest/_login) scrollUntilVisible to their button.

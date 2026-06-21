@@ -1,0 +1,21 @@
+# Welcome -> "Başla" enters the 3-slide onboarding; "İleri" advances each slide
+# and the final "Başla" lands on the register screen. Locks the onboarding path.
+appId: ${APP_ID}
+---
+- runFlow: _launch.yaml
+- scrollUntilVisible:
+    element:
+      text: "Başla"
+    direction: DOWN
+    visibilityPercentage: 40
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+- tapOn: "Başla"
+# On onboarding -> "Atla" (skip) is onboarding-only, confirms we left welcome.
+- assertVisible: "Atla"
+- tapOn: "İleri"
+- tapOn: "İleri"
+# Last slide -> the CTA becomes "Başla" -> proceeds to register.
+- tapOn: "Başla"
+- assertVisible:
+    id: "register-username"

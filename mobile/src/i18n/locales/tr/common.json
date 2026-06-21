@@ -1,0 +1,125 @@
+{
+  "app": {
+    "name": "Bilinç",
+    "tagline": "Sana söylenmeyeni öğren."
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "search": "Ara",
+    "activity": "Aktivitelerim",
+    "activityTab": "Aktivite",
+    "profile": "Profil",
+    "businessPanel": "İşletme Paneli",
+    "adminPanel": "Yönetim Paneli",
+    "login": "Giriş",
+    "register": "Kayıt Ol",
+    "reportFact": "Gerçek Bildir",
+    "menu": "Menü",
+    "accountMenu": "Hesap menüsü",
+    "discover": "Keşfet",
+    "categories": "Kategoriler",
+    "facts": "Gerçekler",
+    "allCategories": "Tüm kategoriler",
+    "searchPlaceholder": "İşletme, ürün veya marka ara",
+    "more": "Daha fazla",
+    "logout": "Çıkış Yap",
+    "about": "Hakkımızda",
+    "privacy": "Gizlilik",
+    "terms": "Kullanım Şartları",
+    "contact": "İletişim",
+    "backToSite": "Siteye Dön",
+    "back": "Geri"
+  },
+  "actions": {
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "submit": "Gönder",
+    "retry": "Tekrar Dene",
+    "seeAll": "Tümünü Gör",
+    "viewMore": "Daha Fazla Gör",
+    "confirm": "Onayla",
+    "ok": "Tamam",
+    "close": "Kapat",
+    "continue": "Devam Et",
+    "enable": "Etkinleştir",
+    "search": "Ara"
+  },
+  "labels": {
+    "username": "Kullanıcı Adı",
+    "displayName": "Görünen Ad",
+    "password": "Şifre",
+    "reputation": "İtibar",
+    "credibility": "Güvenilirlik",
+    "active": "Aktif",
+    "joinDate": "Kayıt Tarihi",
+    "type": "Tür"
+  },
+  "entityType": {
+    "business": "İşletme",
+    "product": "Ürün",
+    "brand": "Marka"
+  },
+  "verification": {
+    "pending": "Beklemede",
+    "verified": "Doğrulanmış",
+    "disputed": "Tartışmalı",
+    "needs_review": "İnceleme Gerekli",
+    "retracted": "Geri Çekilmiş"
+  },
+  "credibility": {
+    "novice": "Acemi",
+    "contributor": "Katkı Sağlayan",
+    "trusted": "Güvenilir",
+    "expert": "Uzman"
+  },
+  "factCategory": {
+    "safety": "Güvenlik",
+    "health": "Sağlık",
+    "quality": "Kalite",
+    "legal": "Hukuki",
+    "environmental": "Çevre",
+    "abuse": "İstismar",
+    "labor": "Çalışma Hakları",
+    "other": "Diğer"
+  },
+  "userType": {
+    "consumer": "Tüketici",
+    "business_owner": "İşletme Sahibi",
+    "admin": "Yönetici"
+  },
+  "date": {
+    "justNow": "az önce",
+    "today": "Bugün",
+    "yesterday": "Dün",
+    "minutesAgo_one": "{{count}} dakika önce",
+    "minutesAgo_other": "{{count}} dakika önce",
+    "hoursAgo_one": "{{count}} saat önce",
+    "hoursAgo_other": "{{count}} saat önce",
+    "daysAgo_one": "{{count}} gün önce",
+    "daysAgo_other": "{{count}} gün önce",
+    "weeksAgo_one": "{{count}} hafta önce",
+    "weeksAgo_other": "{{count}} hafta önce"
+  },
+  "empty": {
+    "noResults": "Sonuç bulunamadı",
+    "noActivity": "Henüz aktivite yok",
+    "noBusinesses": "Henüz işletme bulunamadı",
+    "notReviewed": "Henüz değerlendirilmemiş"
+  },
+  "status": {
+    "loading": "Yükleniyor...",
+    "checking": "Kontrol ediliyor..."
+  },
+  "notFound": {
+    "headerTitle": "Bulunamadı",
+    "title": "Sayfa bulunamadı",
+    "back": "Ana sayfaya dön"
+  },
+  "language": {
+    "label": "Dil",
+    "turkish": "Türkçe",
+    "english": "İngilizce"
+  }
+}

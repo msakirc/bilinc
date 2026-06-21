@@ -1,0 +1,27 @@
+# Profile -> Privacy settings screen renders and saving persists -> success
+# alert. Locks the settings/privacy route.
+appId: ${APP_ID}
+---
+- runFlow:
+    file: _login.yaml
+    env:
+      USERNAME: ${SEED_USER}
+      PASSWORD: ${SEED_PASS}
+- tapOn: "Profil"
+- scrollUntilVisible:
+    element:
+      text: "Gizlilik Ayarları"
+    direction: DOWN
+    visibilityPercentage: 40
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+- tapOn: "Gizlilik Ayarları"
+- assertVisible: "Gizlilik Kontrolü"
+- scrollUntilVisible:
+    element:
+      text: "Kaydet"
+    direction: DOWN
+    waitToSettleTimeoutMs: 1000
+- tapOn: "Kaydet"
+- assertVisible: "Kaydedildi"
+- tapOn: "Tamam|OK"

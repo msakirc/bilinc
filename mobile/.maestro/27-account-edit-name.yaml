@@ -1,0 +1,35 @@
+# Edit the display name and save it (Supabase users update under owner RLS).
+# Requires the account-display-name testID. ASCII text only (Maestro #146).
+# Writes display_name -> reversible/non-destructive on the test user.
+appId: ${APP_ID}
+---
+- runFlow:
+    file: _login.yaml
+    env:
+      USERNAME: ${SEED_USER}
+      PASSWORD: ${SEED_PASS}
+- tapOn: "Profil"
+- scrollUntilVisible:
+    element:
+      text: "Hesap Ayarları"
+    direction: DOWN
+    visibilityPercentage: 40
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+- tapOn: "Hesap Ayarları"
+- assertVisible: "Hesap Bilgileri"
+- tapOn:
+    id: "account-display-name"
+- eraseText
+- inputText: "E2E Test Name"
+- hideKeyboard
+- scrollUntilVisible:
+    element:
+      text: "Kaydet"
+    direction: DOWN
+    waitToSettleTimeoutMs: 1000
+- tapOn: "Kaydet"
+- extendedWaitUntil:
+    visible: "Başarılı"
+    timeout: 15000
+- tapOn: "Onayla|OK|Tamam"

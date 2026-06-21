@@ -1,0 +1,9 @@
+{
+  "title": "Hata",
+  "success": "Başarılı",
+  "somethingWrong": "Bir şeyler ters gitti",
+  "unexpected": "Beklenmeyen bir hata oluştu. Lütfen tekrar deneyin.",
+  "restartHint": "Sorun devam ederse uygulamayı yeniden başlatın.",
+  "loginFailed": "Giriş Başarısız",
+  "tryAgain": "Tekrar Dene"
+}

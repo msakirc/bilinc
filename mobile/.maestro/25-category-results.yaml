@@ -1,0 +1,15 @@
+# Category results screen via deep link. Header (name) + sort controls always
+# render regardless of the catalog backend; the result list/empty-state loads
+# below. Asserts the stable chrome (catalog-independent).
+appId: ${APP_ID}
+---
+- runFlow:
+    file: _login.yaml
+    env:
+      USERNAME: ${SEED_USER}
+      PASSWORD: ${SEED_PASS}
+- openLink:
+    link: "bilinc://category/food-drink/results"
+- assertVisible: "Yiyecek & İçecek"
+- assertVisible: "En Çok Değerlendirilen"
+- assertVisible: "En Yüksek Puan"

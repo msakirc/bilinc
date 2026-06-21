@@ -1,0 +1,28 @@
+# Subflow: log in with ${USERNAME}/${PASSWORD}, land on Home tab.
+appId: ${APP_ID}
+tags:
+  - subflow
+---
+- runFlow: _launch.yaml
+- scrollUntilVisible:
+    element:
+      text: "Zaten hesabın var mı? Giriş Yap"
+    direction: DOWN
+    visibilityPercentage: 20
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+- tapOn: "Zaten hesabın var mı? Giriş Yap"
+- tapOn:
+    id: "login-username"
+- inputText: ${USERNAME}
+- tapOn:
+    id: "login-password"
+- inputText: ${PASSWORD}
+- hideKeyboard
+- scrollUntilVisible:
+    element:
+      id: "login-submit"
+    direction: DOWN
+- tapOn:
+    id: "login-submit"
+- assertVisible: "Ana Sayfa"

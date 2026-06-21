@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bilinc-bg: var(--bg);
+  --color-bilinc-surface: var(--surface);
+  --color-bilinc-surface-secondary: var(--surface-secondary);
+  --color-bilinc-input: var(--input);
+  --color-bilinc-text: var(--text);
+  --color-bilinc-text-secondary: var(--text-secondary);
+  --color-bilinc-text-tertiary: var(--text-tertiary);
+  --color-bilinc-primary: var(--primary);
+  --color-bilinc-primary-light: var(--primary-light);
+  --color-bilinc-border: var(--border);
+  --color-bilinc-border-light: var(--border-light);
+  --color-bilinc-verified: var(--verified);
+  --color-bilinc-pending: var(--pending);
+  --color-bilinc-disputed: var(--disputed);
+  --color-bilinc-info: var(--info);
+  --color-bilinc-star-filled: var(--star-filled);
+  --color-bilinc-star-empty: var(--star-empty);
+  --color-bilinc-amber: var(--amber);
+  --color-bilinc-amber-soft: var(--amber-soft);
+  --color-bilinc-alert: var(--alert);
+  --color-bilinc-alert-soft: var(--alert-soft);
+  --color-bilinc-verified-soft: var(--verified-soft);
+  --color-bilinc-disputed-soft: var(--disputed-soft);
+  --color-bilinc-pending-soft: var(--pending-soft);
+  --color-bilinc-brand: var(--brand);
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-fraunces);
+}
+
+:root {
+  --bg: #FAF9F7;
+  --surface: #FFFFFF;
+  --surface-secondary: #F0EDE8;
+  --input: #F0EDE8;
+  --text: #1A1A1A;
+  --text-secondary: #4A4A4A;
+  --text-tertiary: #757575;
+  --primary: #1B4D3E;
+  --primary-light: #E8F5E9;
+  /* --brand = deep forest brand fill for large blocks (join band); stays forest
+     in BOTH themes so it never goes neon like dark-mode --primary (#10D97E). */
+  --brand: #1B4D3E;
+  --border: #E5E5E5;
+  --border-light: #F0EDE8;
+  --verified: #10B981;
+  --pending: #F59E0B;
+  --disputed: #EF4444;
+  --info: #3B82F6;
+  --star-filled: #F59E0B;
+  --star-empty: #D1D5DB;
+  --amber: #C97A1A;
+  --amber-soft: #FBF0E2;
+  /* --alert = active danger / tağşiş warning; distinct from --disputed (a fact voted false) */
+  --alert: #B3261E;
+  --alert-soft: #FBEBE9;
+  --verified-soft: #E3F4EC;
+  --disputed-soft: #FBEBE9;
+  --pending-soft: #FCEFD2;
+}
+
+.dark {
+  --bg: #1A1D23;
+  --surface: #23272F;
+  --surface-secondary: #2B3039;
+  --input: #33373F;
+  --text: #F2F2F2;
+  --text-secondary: #B3B3B3;
+  --text-tertiary: #808080;
+  --primary: #10D97E;
+  --primary-light: rgba(16, 217, 126, 0.2);
+  --brand: #1F5C46;
+  --border: rgba(255, 255, 255, 0.1);
+  --border-light: rgba(255, 255, 255, 0.05);
+  --verified: #0DB86A;
+  --pending: #F5A623;
+  --disputed: #FF6B6B;
+  --info: #4ECDC4;
+  --star-filled: #F5A623;
+  --star-empty: #33373F;
+  --amber: #E0944A;
+  --amber-soft: rgba(224, 148, 74, 0.18);
+  --alert: #FF6B6B;
+  --alert-soft: rgba(255, 107, 107, 0.16);
+  --verified-soft: rgba(13, 184, 106, 0.18);
+  --disputed-soft: rgba(255, 107, 107, 0.16);
+  --pending-soft: rgba(245, 166, 35, 0.16);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}

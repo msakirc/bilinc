@@ -1,0 +1,13 @@
+{
+  "required": "Bu alan zorunludur",
+  "fillAllFields": "Lütfen tüm alanları doldurun.",
+  "usernameChecking": "Kontrol ediliyor...",
+  "usernameAvailable": "Kullanıcı adı kullanılabilir",
+  "usernameTaken": "Kullanıcı adı zaten alınmış",
+  "usernameRule": "3-20 karakter; harf, rakam ve alt çizgi",
+  "usernameMin": "En az 3 karakter gereklidir",
+  "passwordMin": "Şifre en az 6 karakter olmalı",
+  "passwordsNoMatch": "Şifreler eşleşmiyor",
+  "mustAcceptTerms": "Devam etmek için Kullanım Koşullarını ve Gizlilik Politikasını kabul edin",
+  "mustAcceptConsent": "Devam etmek için yurt dışına veri aktarımına ilişkin açık rıza onayını vermeniz gerekir"
+}

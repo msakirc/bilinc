@@ -1,0 +1,39 @@
+{
+  "score": "Score: {{score}}",
+  "stats": {
+    "title": "Reputation Statistics",
+    "totalReviews": "Total Reviews",
+    "totalFacts": "Total Facts",
+    "helpfulVotes": "Helpful Votes",
+    "verifiedFacts": "Verified",
+    "verificationRate": "Fact Verification Rate",
+    "memberSince": "Member Since",
+    "memberSinceWeb": "Member since {{date}}",
+    "points": "{{count}} points"
+  },
+  "recentActivity": {
+    "title": "Recent Activity"
+  },
+  "settings": {
+    "title": "Settings",
+    "account": "Account Settings",
+    "notifications": "Notification Preferences",
+    "privacy": "Privacy Settings",
+    "help": "Help & Support",
+    "theme": "Theme ({{mode}})",
+    "themeDark": "Dark",
+    "themeLight": "Light"
+  },
+  "type": {
+    "review": "Review",
+    "fact": "Fact"
+  },
+  "comingSoon": {
+    "title": "Coming soon!",
+    "message": "This feature will be added soon."
+  },
+  "error": {
+    "userNotFound": "User not found",
+    "loadFailed": "Could not load profile"
+  }
+}

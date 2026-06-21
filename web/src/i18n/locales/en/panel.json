@@ -1,0 +1,204 @@
+{
+  "sidebar": {
+    "overview": "Overview",
+    "myBusinesses": "My Businesses",
+    "reviews": "Reviews",
+    "facts": "Facts",
+    "subscription": "Subscription",
+    "ownerRole": "Business Owner"
+  },
+  "dashboard": {
+    "welcome": "Welcome, {{name}}",
+    "subtitle": "An overview of your business panel",
+    "emptyTitle": "You don't have a verified business yet",
+    "emptyDescription": "You can start managing your business by submitting a claim request.",
+    "claimBusiness": "Claim a Business",
+    "stats": {
+      "rating": "Rating",
+      "reviews": "Reviews",
+      "facts": "Facts"
+    },
+    "viewReviews": "Reviews",
+    "viewFacts": "Facts"
+  },
+  "listings": {
+    "title": "My Businesses",
+    "emptyTitle": "You don't have a verified business yet",
+    "emptyDescription": "You can start managing your business by submitting a claim request.",
+    "claimBusiness": "Claim a Business",
+    "table": {
+      "name": "Business Name",
+      "type": "Type",
+      "rating": "Rating",
+      "reviews": "Reviews",
+      "facts": "Facts",
+      "status": "Status"
+    }
+  },
+  "reviews": {
+    "title": "Reviews",
+    "filters": {
+      "all": "All",
+      "unanswered": "Unanswered",
+      "answered": "Answered"
+    },
+    "emptyTitle": "No reviews found",
+    "emptyUnanswered": "No unanswered reviews.",
+    "emptyAnswered": "No answered reviews.",
+    "emptyAll": "No reviews yet.",
+    "anonymous": "Anonymous",
+    "yourResponse": "Your response",
+    "responsePlaceholder": "Write your response...",
+    "writeResponse": "Write a Response",
+    "submitting": "Submitting..."
+  },
+  "facts": {
+    "title": "Facts",
+    "filters": {
+      "all": "All",
+      "unanswered": "Unanswered",
+      "answered": "Answered",
+      "verified": "Verified",
+      "disputed": "Disputed"
+    },
+    "emptyTitle": "No facts found",
+    "emptyUnanswered": "No unanswered facts.",
+    "emptyAnswered": "No answered facts.",
+    "emptyAll": "No facts reported yet.",
+    "anonymous": "Anonymous",
+    "yourResponse": "Your response",
+    "responsePlaceholder": "Write your response...",
+    "writeResponse": "Write a Response",
+    "submitting": "Submitting..."
+  },
+  "subscription": {
+    "title": "Subscription",
+    "currentPlanTitle": "Your Current Plan",
+    "active": "Active",
+    "period": "Period: {{start}} - {{end}}",
+    "freePlan": "Free Plan",
+    "freePlanNote": "You are using the basic features.",
+    "plansTitle": "Plans",
+    "perMonthSuffix": "TL/mo",
+    "contactPrice": "Get in touch",
+    "currentPlan": "Current Plan",
+    "upgrade": "Upgrade",
+    "comingSoon": "Coming soon",
+    "tiers": {
+      "free": {
+        "name": "Free",
+        "features": {
+          "view": "Business listing view",
+          "basicStats": "Basic statistics"
+        }
+      },
+      "basic": {
+        "name": "Basic",
+        "features": {
+          "replyReviews": "Reply to reviews",
+          "replyFacts": "Reply to facts",
+          "statsPanel": "Statistics panel"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "features": {
+          "prioritySupport": "Priority support",
+          "detailedAnalytics": "Detailed analytics",
+          "customBadges": "Custom badges"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "features": {
+          "apiAccess": "API access",
+          "multiBusiness": "Multi-business management",
+          "customIntegrations": "Custom integrations"
+        }
+      }
+    }
+  },
+  "claim": {
+    "searchTitle": "Claim Your Business",
+    "searchSubtitle": "Search for and select the business you want to manage, then submit a claim request.",
+    "searchPlaceholder": "Search business name...",
+    "searching": "Searching...",
+    "noResults": "No results found",
+    "requestTitle": "Claim Request",
+    "businessNotFound": "Business not found",
+    "roleLabel": "Your Role *",
+    "roles": {
+      "owner": "Owner",
+      "manager": "Manager",
+      "employee": "Employee"
+    },
+    "vknLabel": "Tax Identification Number *",
+    "vknPlaceholder": "10-digit TIN",
+    "vknHelp": "The business tax identification number. Phone/domain verification is coming soon.",
+    "introTitle": "Claim This Business",
+    "introWhy": "If you are the owner or an authorised representative of this business, you can submit a claim. Verified businesses can respond to reviews and update their profile information.",
+    "introBullet1": "Record a short video to verify your identity",
+    "introBullet2": "Prove business ownership with your Tax ID (VKN)",
+    "introBullet3": "Our moderators will review within 3 business days",
+    "sectionRole": "YOUR ROLE AT THE BUSINESS",
+    "sectionVkn": "TAX IDENTIFICATION NUMBER (VKN)",
+    "sectionAydinlatma": "DISCLOSURE TEXT",
+    "sectionVideo": "VERIFICATION VIDEO",
+    "vknHint": "Your VKN is the 10-digit number issued by the tax office.",
+    "vknError": "Invalid VKN. Please enter your 10-digit tax identification number.",
+    "guestTitle": "Login Required",
+    "guestWall": "Please log in to submit a business ownership claim.",
+    "goBack": "Go Back",
+    "successTitle": "Application Received",
+    "successMessage": "Our moderators will review your application and get back to you within 3 business days.",
+    "ok": "OK",
+    "capturedVideo": "Video recorded ({{seconds}} s)",
+    "retake": "Retake",
+    "submitButton": "Submit Application",
+    "submittingButton": "Submitting…",
+    "cancel": "Cancel",
+    "retryUpload": "Retry Video Upload",
+    "uploadError": "There was a problem uploading the video. You can try again.",
+    "errorTitle": "Error",
+    "errorGeneric": "There was a problem submitting your application. Please try again.",
+    "aydinlatmaLabel": "Disclosure Text",
+    "aydinlatmaLink": "I have read the Business Verification Disclosure Text",
+    "consent": "I give my explicit consent under KVKK for my tax identification number and related personal data to be processed for the purpose of ownership verification.",
+    "submit": "Submit Request",
+    "submitting": "Submitting...",
+    "successDescription": "Your ownership claim for {{name}} has been submitted for review. Once approved, your business panel will open and you will be notified by email.",
+    "backToBusiness": "Back to Business",
+    "video": {
+      "permissionChecking": "Checking camera permission…",
+      "cameraPermissionTitle": "Camera Permission Required",
+      "cameraPermissionMessage": "You need to allow camera access to record the verification video.",
+      "permissionDeniedTitle": "Camera Permission Required",
+      "permissionDeniedMessage": "Camera permission is required to record the verification video.",
+      "allowButton": "Allow",
+      "openSettings": "Open Settings",
+      "livenessInstruction": "Read aloud during recording:",
+      "recording": "Recording in progress…",
+      "promptsTitle": "Show the following in order during the video:",
+      "shot1": "Entrance + door/street number",
+      "shot2": "Permanent signage (business name visible)",
+      "shot3": "Behind the counter / cash register / kitchen / barber area",
+      "durationHint": "Recommended duration: at least 30 seconds (max 60 s)",
+      "startRecording": "Start Recording",
+      "stopRecording": "Stop Recording",
+      "captured": "Video recorded successfully"
+    },
+    "handoff": {
+      "title": "Complete the video on your phone",
+      "description": "The ownership verification video must be recorded through the mobile app for security and location verification. Scan the QR code below with your phone or tap the link.",
+      "deepLinkLabel": "Open in App",
+      "qrAlt": "QR code for Bilinç app",
+      "claimIdLabel": "Claim ID:"
+    },
+    "errors": {
+      "invalidVkn": "Enter a valid 10-digit tax identification number",
+      "consentRequired": "You must accept the KVKK disclosure to continue",
+      "duplicate": "You already have a pending request for this business",
+      "generic": "The request could not be submitted. Please try again"
+    }
+  }
+}

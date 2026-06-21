@@ -1,0 +1,14 @@
+# Bug-lock: a guest opening the review screen is shown a login prompt,
+# not the review form. (review.tsx renders the guest gate when !user.)
+appId: ${APP_ID}
+---
+- runFlow: _guest.yaml
+- runFlow: _open-business.yaml
+- tapOn:
+    id: "business-write-review"
+# Guest must hit the login gate, not the star rating form.
+- assertVisible: "Giriş Yapmanız Gerekiyor"
+- assertVisible:
+    id: "review-guest-back"
+- assertNotVisible:
+    id: "review-star-5"

@@ -1,0 +1,36 @@
+# Subflow: from any tab, search ${SEARCH_TERM} and open the first result.
+# Asserts the business detail screen via its action buttons.
+appId: ${APP_ID}
+tags:
+  - subflow
+---
+- tapOn: "Ara"
+- tapOn:
+    id: "search-input"
+- inputText: ${SEARCH_TERM}
+- hideKeyboard
+# The FIRST search after a cold app launch is slow (cold Cognito creds + Lambda
+# cold-start) and can exceed tapOn's default retry window -> wait for a result
+# to render before tapping. This is the root cause of the intermittent
+# "search returns 0" failures (every single-flow run hits the cold path).
+- extendedWaitUntil:
+    visible:
+      id: "search-result-.*"
+    timeout: 30000
+- tapOn:
+    id: "search-result-.*"   # regex: first matching result
+# CONTENT assertion (not just structure): the detail must render the REAL
+# catalog business name from the seed row, proving data actually loaded — a
+# placeholder/empty card would still carry the testID but fail this. The name
+# sits at the top of the detail (above the fold).
+- assertVisible: "${SEARCH_TERM}"
+# Detail screen opens; the action buttons can sit below the fold (esp. when the
+# DynamoDB catalog falls back to mock data with a different layout) -> scroll.
+- scrollUntilVisible:
+    element:
+      id: "business-write-review"
+    direction: DOWN
+    visibilityPercentage: 30
+    waitToSettleTimeoutMs: 1000
+- assertVisible:
+    id: "business-write-review"

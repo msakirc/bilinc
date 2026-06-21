@@ -1,0 +1,19 @@
+# Category detail screen renders via deep link (bypasses the flaky search to
+# reach it). Header + subcategories come from AppData/fallback (catalog-free);
+# the "See All" button is always present. Uses a real top-level slug.
+appId: ${APP_ID}
+---
+- runFlow:
+    file: _login.yaml
+    env:
+      USERNAME: ${SEED_USER}
+      PASSWORD: ${SEED_PASS}
+- openLink:
+    link: "bilinc://category/food-drink"
+- assertVisible: "Yiyecek & İçecek"
+- scrollUntilVisible:
+    element:
+      text: "Tüm Sonuçları Gör"
+    direction: DOWN
+    waitToSettleTimeoutMs: 1000
+- assertVisible: "Tüm Sonuçları Gör"

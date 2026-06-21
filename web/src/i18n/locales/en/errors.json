@@ -1,0 +1,9 @@
+{
+  "title": "Error",
+  "success": "Success",
+  "somethingWrong": "Something went wrong",
+  "unexpected": "An unexpected error occurred. Please try again.",
+  "restartHint": "If the problem persists, restart the app.",
+  "loginFailed": "Login Failed",
+  "tryAgain": "Try Again"
+}

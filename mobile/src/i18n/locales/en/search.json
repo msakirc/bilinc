@@ -1,0 +1,48 @@
+{
+  "placeholder": "Search for anything...",
+  "placeholderWeb": "Search businesses, products or brands...",
+  "resultsFor": "Results for \"{{query}}\"",
+  "resultCount_one": "{{count}} result",
+  "resultCount_other": "{{count}} results",
+  "sort": {
+    "mostReviewed": "Most Reviewed",
+    "topRated": "Top Rated"
+  },
+  "status": {
+    "searching": "Searching..."
+  },
+  "empty": {
+    "noResultsSubtitle": "Try different keywords",
+    "noResultsSubtitleWeb": "Try different keywords or filters",
+    "promptTitle": "Type something to search",
+    "promptSubtitle": "You can search for businesses, products or brands"
+  },
+  "browse": {
+    "recentSearches": "Recent Searches",
+    "browseCategories": "Browse Categories",
+    "popularNow": "Popular Now"
+  },
+  "popular": {
+    "pizzaNearby": "pizza near me",
+    "pharmacyHours": "pharmacy opening hours",
+    "oilChange": "oil change service",
+    "bestCoffee": "best coffee shops",
+    "winterTires": "winter tire fitting"
+  },
+  "filters": {
+    "title": "Filters",
+    "type": "Type",
+    "city": "City",
+    "allCities": "All Cities",
+    "minRating": "Minimum Rating",
+    "all": "All"
+  },
+  "result": {
+    "reviewCount_one": "({{count}} review)",
+    "reviewCount_other": "({{count}} reviews)"
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next"
+  }
+}

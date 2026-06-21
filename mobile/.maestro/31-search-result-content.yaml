@@ -1,0 +1,21 @@
+# CONTENT regression guard for search results (catalog / DynamoDB — no auth).
+# 06-search-sort asserts only `search-result-.*` testIDs — a result card with a
+# placeholder image / empty name / undefined badge keeps its testID and passes.
+# This asserts the result actually renders the REAL business name text, proving
+# the catalog row (not a skeleton/placeholder) reached the card.
+appId: ${APP_ID}
+---
+- runFlow: _guest.yaml
+- tapOn: "Ara"
+- tapOn:
+    id: "search-input"
+- inputText: ${SEARCH_TERM}
+- hideKeyboard
+# Cold first search is slow (Cognito unauth creds + Lambda cold start) -> wait on
+# the result testID before asserting its text content.
+- extendedWaitUntil:
+    visible:
+      id: "search-result-.*"
+    timeout: 30000
+# The card must show the real name text, not just exist in the hierarchy.
+- assertVisible: "Test Kafe"

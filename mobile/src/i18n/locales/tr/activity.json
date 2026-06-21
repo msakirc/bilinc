@@ -1,0 +1,64 @@
+{
+  "title": "Aktivitelerim",
+  "tabs": {
+    "all": "Tümü",
+    "reviews": "Değerlendirmeler",
+    "facts": "Bilgiler"
+  },
+  "tabsWeb": {
+    "reviews": "Değerlendirmelerim ({{count}})",
+    "facts": "Bilgilerim ({{count}})"
+  },
+  "level": {
+    "novice": "Acemi",
+    "contributor": "Katkı Sağlayan",
+    "trusted": "Güvenilir",
+    "expert": "Uzman"
+  },
+  "score": {
+    "subLabel": "Toplam Güvenilirlik Puanı",
+    "reviewScore": "Değerlendirme\nPuanı",
+    "factScore": "Bilgi\nPuanı",
+    "activityBonus": "Aktivite\nBonusu",
+    "nextLevel": "Sonraki seviye: {{level}}",
+    "maxLevel": "En yüksek seviyedesiniz!"
+  },
+  "factNotice": "Bilgi paylaşımını açmak için <bold>{{points}} puan</bold> daha kazanın.",
+  "factNoticePoints": "{{count}} puan",
+  "type": {
+    "review": "Değerlendirme",
+    "fact": "Bilgi"
+  },
+  "status": {
+    "verified": "Doğrulanmış",
+    "pending": "Beklemede",
+    "disputed": "Tartışmalı"
+  },
+  "actions": {
+    "edit": "Düzenle",
+    "delete": "Sil"
+  },
+  "edit": {
+    "title": "Düzenle",
+    "comingSoon": "Düzenleme özelliği yakında eklenecektir."
+  },
+  "delete": {
+    "title": "Sil",
+    "confirm": "Bu katkıyı silmek istediğinizden emin misiniz?",
+    "confirmReviewWeb": "Bu değerlendirmeyi silmek istediğinizden emin misiniz?",
+    "confirmFactWeb": "Bu bilgiyi silmek istediğinizden emin misiniz?",
+    "errorTitle": "Hata",
+    "errorMessage": "Silinemedi. Lütfen tekrar deneyin.",
+    "errorReviewWeb": "Değerlendirme silinemedi",
+    "errorFactWeb": "Bilgi silinemedi"
+  },
+  "empty": {
+    "title": "Henüz aktivite yok.",
+    "subtitle": "Değerlendirme yazmaya başlayın!",
+    "cta": "İşletme Ara",
+    "reviewsTitle": "Henüz değerlendirme yazmadınız",
+    "reviewsSubtitle": "İşletmelere değerlendirme yazarak katkıda bulunun",
+    "factsTitle": "Henüz bilgi eklemediniz",
+    "factsSubtitle": "İşletmeler hakkında bilgi ekleyerek katkıda bulunun"
+  }
+}

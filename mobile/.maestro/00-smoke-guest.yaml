@@ -1,0 +1,14 @@
+# Smoke: app launches, guest browse works, business detail opens.
+appId: ${APP_ID}
+---
+- runFlow: _guest.yaml
+- runFlow: _open-business.yaml
+# report-fact button is below the fold on the detail screen
+- scrollUntilVisible:
+    element:
+      id: "business-report-fact"
+    direction: DOWN
+    visibilityPercentage: 20
+    waitToSettleTimeoutMs: 1000
+- assertVisible:
+    id: "business-report-fact"

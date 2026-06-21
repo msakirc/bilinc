@@ -1,0 +1,18 @@
+# Subflow: enter as guest, land on Home tab.
+appId: ${APP_ID}
+tags:
+  - subflow
+---
+- runFlow: _launch.yaml
+# The guest button sits near the bottom of the welcome ScrollView. centerElement
+# can't center a near-bottom element and intermittently fails to settle on it
+# (worse when the emulator is janky) -> scroll without centering, low visibility
+# threshold, longer settle.
+- scrollUntilVisible:
+    element:
+      text: "Misafir Olarak Gözat"
+    direction: DOWN
+    visibilityPercentage: 10
+    waitToSettleTimeoutMs: 1500
+- tapOn: "Misafir Olarak Gözat"
+- assertVisible: "Ana Sayfa"

@@ -1,0 +1,13 @@
+{
+  "required": "This field is required",
+  "fillAllFields": "Please fill in all fields.",
+  "usernameChecking": "Checking...",
+  "usernameAvailable": "Username is available",
+  "usernameTaken": "Username is already taken",
+  "usernameRule": "3-20 characters; letters, numbers and underscore",
+  "usernameMin": "At least 3 characters required",
+  "passwordMin": "Password must be at least 6 characters",
+  "passwordsNoMatch": "Passwords do not match",
+  "mustAcceptTerms": "To continue, accept the Terms of Use and Privacy Policy",
+  "mustAcceptConsent": "To continue, you must give explicit consent for the transfer of data abroad"
+}

@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "Bilinç",
+    "slug": "bilinc",
+    "scheme": "bilinc",
+    "plugins": [
+      "expo-router",
+      "@sentry/react-native"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "_legalUrlsComment": "PLACEHOLDER URLs — these pages are NOT published yet. Before App Store / Google Play submission, publish the legal pages (docs/legal/*.md) and replace these with the real hosted URLs. App Store Connect and Play Console both require a live Privacy Policy URL.",
+      "privacyPolicyUrl": "https://bilinc.app/gizlilik",
+      "termsOfServiceUrl": "https://bilinc.app/kosullar"
+    },
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "net.bilinc.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Yakınınızdaki işletmeleri ve mekanları gösterebilmek için konumunuza erişmemiz gerekiyor.",
+        "NSPhotoLibraryUsageDescription": "Değerlendirmelerinize ve gerçek bildirimlerinize fotoğraf ekleyebilmeniz için fotoğraf galerinize erişmemiz gerekiyor.",
+        "NSCameraUsageDescription": "Değerlendirmelerinize ve gerçek bildirimlerinize fotoğraf çekip ekleyebilmeniz için kameranıza erişmemiz gerekiyor."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": false,
+      "package": "net.bilinc.app",
+      "versionCode": 1,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    }
+  }
+}

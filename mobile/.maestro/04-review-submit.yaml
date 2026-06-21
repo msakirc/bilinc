@@ -1,0 +1,68 @@
+# Happy path: a user writes and submits a review (5 stars + text).
+# reviews has UNIQUE(user_id, listing_id) (db/tables.sql) -> one review per user
+# per business, so re-submitting as the same seed user throws a duplicate and the
+# screen never returns to detail. To stay re-runnable we register a FRESH user
+# each run (REG_SUFFIX) — a brand-new user_id can never collide. Reviews are not
+# reputation-gated, so a rep-0 newcomer can review. WRITES a real review row +
+# a throwaway user — test Supabase only.
+appId: ${APP_ID}
+---
+- runFlow: _launch.yaml
+- scrollUntilVisible:
+    element:
+      text: "Zaten hesabın var mı? Giriş Yap"
+    direction: DOWN
+    visibilityPercentage: 20
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+- tapOn: "Zaten hesabın var mı? Giriş Yap"
+- tapOn:
+    id: "login-register"
+- tapOn:
+    id: "register-username"
+- inputText: "e2e_rev_${REG_SUFFIX}"
+- tapOn:
+    id: "register-password"
+- inputText: "Test1234!"
+- tapOn:
+    id: "register-confirm-password"
+- inputText: "Test1234!"
+- hideKeyboard
+- tapOn:
+    id: "register-terms-checkbox"
+- tapOn:
+    id: "register-kvkk-checkbox"
+- scrollUntilVisible:
+    element:
+      id: "register-submit"
+    direction: DOWN
+    visibilityPercentage: 20
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+- tapOn:
+    id: "register-submit"
+- tapOn: "OK|Tamam"
+- assertVisible: "Ana Sayfa"
+# Fresh user is now authenticated -> open Test Kafe and review it.
+- runFlow: _open-business.yaml
+- tapOn:
+    id: "business-write-review"
+- tapOn:
+    id: "review-star-5"
+- tapOn:
+    id: "review-text"
+- inputText: "E2E otomatik degerlendirme metni."
+- hideKeyboard
+- tapOn:
+    id: "review-submit"
+# Success alert -> confirm dismisses it and router.back()s to the detail screen.
+- tapOn: "Onayla|OK|Tamam"
+# Back on the business detail (write-review button may be below the fold).
+- scrollUntilVisible:
+    element:
+      id: "business-write-review"
+    direction: DOWN
+    visibilityPercentage: 20
+    waitToSettleTimeoutMs: 1000
+- assertVisible:
+    id: "business-write-review"

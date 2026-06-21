@@ -1,0 +1,200 @@
+{
+  "sidebar": {
+    "role": "Admin",
+    "dashboard": "Dashboard",
+    "users": "Users",
+    "listings": "Businesses",
+    "reviews": "Reviews",
+    "facts": "Facts",
+    "claims": "Claims",
+    "edits": "Edits"
+  },
+  "dashboard": {
+    "title": "Admin Panel",
+    "stats": {
+      "total_users": "Total Users",
+      "active_users_30d": "Active Users (30d)",
+      "total_listings": "Total Businesses",
+      "pending_listings": "Pending Businesses",
+      "total_reviews": "Total Reviews",
+      "reviews_today": "Today's Reviews",
+      "total_facts": "Total Facts",
+      "pending_claims": "Pending Claims",
+      "pending_edits": "Pending Edits"
+    }
+  },
+  "pagination": {
+    "page": "Page {{page}}",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "users": {
+    "title": "Users",
+    "columns": {
+      "username": "Username",
+      "displayName": "Display Name",
+      "type": "Type",
+      "reputation": "Reputation",
+      "credibility": "Credibility",
+      "active": "Active",
+      "joinDate": "Join Date"
+    },
+    "empty": "No users found"
+  },
+  "listings": {
+    "title": "Businesses",
+    "tabs": {
+      "all": "All",
+      "active": "Active",
+      "pending": "Pending",
+      "removed": "Removed"
+    },
+    "status": {
+      "active": "Active",
+      "pending": "Pending",
+      "removed": "Removed"
+    },
+    "columns": {
+      "name": "Business Name",
+      "type": "Type",
+      "status": "Status",
+      "city": "City",
+      "rating": "Rating",
+      "reviews": "Reviews",
+      "createdBy": "Created By",
+      "date": "Date"
+    },
+    "empty": "No businesses found"
+  },
+  "reviews": {
+    "title": "Reviews",
+    "tabs": {
+      "all": "All",
+      "flagged": "Flagged",
+      "active": "Active",
+      "hidden": "Hidden",
+      "removed": "Removed"
+    },
+    "status": {
+      "active": "Active",
+      "hidden": "Hidden",
+      "removed": "Removed"
+    },
+    "columns": {
+      "listing": "Business",
+      "user": "User",
+      "rating": "Rating",
+      "content": "Content",
+      "status": "Status",
+      "flagged": "Flagged",
+      "date": "Date"
+    },
+    "flagged": {
+      "yes": "Yes",
+      "no": "No"
+    },
+    "empty": "No reviews found"
+  },
+  "facts": {
+    "title": "Facts",
+    "tabs": {
+      "all": "All",
+      "flagged": "Flagged",
+      "pending": "Pending",
+      "verified": "Verified",
+      "disputed": "Disputed"
+    },
+    "verification": {
+      "pending": "Pending",
+      "verified": "Verified",
+      "disputed": "Disputed",
+      "retracted": "Retracted"
+    },
+    "columns": {
+      "listing": "Business",
+      "user": "User",
+      "category": "Category",
+      "statement": "Statement",
+      "verificationStatus": "Verification Status",
+      "flagged": "Flagged",
+      "date": "Date"
+    },
+    "flagged": {
+      "yes": "Yes",
+      "no": "No"
+    },
+    "empty": "No facts found"
+  },
+  "claims": {
+    "title": "Claims",
+    "role": {
+      "owner": "Owner",
+      "manager": "Manager",
+      "employee": "Employee"
+    },
+    "columns": {
+      "listing": "Business",
+      "user": "User",
+      "role": "Role",
+      "verificationMethod": "Verification Method",
+      "requestedAt": "Requested At",
+      "actions": "Actions"
+    },
+    "tabs": {
+      "pending": "Pending",
+      "verified": "Verified"
+    },
+    "document": "Document",
+    "watchVideo": "Watch",
+    "taxNumber": "Tax No: {{value}}",
+    "approve": "Approve",
+    "reject": "Reject",
+    "revokeAction": "Revoke verification",
+    "empty": "No pending claims found",
+    "verifiedEmpty": "No verified claims found",
+    "reconciliation": {
+      "title": "Verification Details",
+      "taxNumber": "Tax Number",
+      "role": "Role",
+      "gps": "GPS Coordinates"
+    },
+    "rejectModal": {
+      "title": "Reject Claim",
+      "reasonPlaceholder": "Reason for rejection (optional)"
+    },
+    "revokeModal": {
+      "title": "Revoke Verification",
+      "confirm": "Revoke",
+      "reasonPlaceholder": "Reason (optional)"
+    }
+  },
+  "edits": {
+    "title": "Edits",
+    "fields": {
+      "name": "Business Name",
+      "description": "Description",
+      "address_line": "Address",
+      "city_code": "City",
+      "entity_type": "Type",
+      "category_id": "Category",
+      "phone": "Phone",
+      "website": "Website"
+    },
+    "columns": {
+      "listing": "Business",
+      "user": "User",
+      "field": "Field",
+      "oldValue": "Old Value",
+      "newValue": "New Value",
+      "date": "Date",
+      "actions": "Actions"
+    },
+    "approve": "Approve",
+    "reject": "Reject",
+    "empty": "No pending edits found",
+    "rejectModal": {
+      "title": "Reject Edit",
+      "reasonPlaceholder": "Reason for rejection (optional)"
+    }
+  }
+}

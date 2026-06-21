@@ -1,0 +1,77 @@
+{
+  "searchPlaceholder": "Search businesses, products or brands...",
+  "hero": {
+    "title": "Learn what they\nwon't tell you.",
+    "subtitle": "Adulterated food, uninsured labor, hidden price hikes, environmental damage — see the facts through official data and community reports.",
+    "webTitle": "Opinions aside, <em>facts</em> apart.",
+    "webSubtitle": "Discover community-verified facts about businesses, brands and products.",
+    "eyebrow": "Turkey's verified-facts platform",
+    "searchCta": "Search"
+  },
+  "sections": {
+    "categories": "Categories",
+    "foodSafetyWarnings": "Food Safety Warnings",
+    "nearbyBusinesses": "Businesses Near You",
+    "popularBusinesses": "Popular Businesses",
+    "tagsisWarnings": "Adulteration Warnings",
+    "verifiedFacts": "Verified Facts",
+    "disputedClaims": "Disputed Claims",
+    "recentlyAdded": "Recently Added",
+    "viewAll": "View all →",
+    "tagsisThisWeek_one": "{{count}} alert this week →",
+    "tagsisThisWeek_other": "{{count}} alerts this week →"
+  },
+  "tagsis": {
+    "officialData": "OFFICIAL DATA",
+    "source": "Adulteration detection data from the Turkish Ministry of Agriculture and Forestry",
+    "detail": "Details"
+  },
+  "trust": { "facts": "Verified facts", "businesses": "Businesses", "cities": "Provinces" },
+  "fact": { "inVoting": "In voting", "truePctSuffix": "true" },
+  "listing": {
+    "factBadge_one": "{{count}} verified fact",
+    "factBadge_other": "{{count}} verified facts",
+    "tagsisBadge_one": "{{count}} adulteration alert",
+    "tagsisBadge_other": "{{count}} adulteration alerts"
+  },
+  "location": {
+    "title": "See businesses near you",
+    "description": "Your location is used only to show businesses close to you. It is never stored or shared.",
+    "enable": "Enable Location"
+  },
+  "impact": {
+    "title": "Your Impact",
+    "emptyHeading": "A trusted community is built together",
+    "emptyBody": "Review the places you know and share your experiences. Every contribution strengthens the community and brings you closer to the right to report facts.",
+    "points": "Points",
+    "level": "Level",
+    "credibilityNew": "New",
+    "forFactReporting": "For fact reporting",
+    "pointsProgress": "{{current}}/{{threshold}} points",
+    "writeReview": "Write a Review",
+    "writeFact": "Write a Review"
+  },
+  "cta": {
+    "title": "Everyone knows something",
+    "body": "Adulteration, mistreatment, labor rights violations, environmental damage...\nShare the truth you know and protect others."
+  },
+  "join": {
+    "label": "Join the community",
+    "title": "Know a fact? Let the community verify it.",
+    "body": "Write reviews, report facts, vote. Reach 100 points to report facts yourself.",
+    "perReview": "Per review",
+    "perFact": "Verified fact",
+    "threshold": "Reporting threshold",
+    "cta": "Join free"
+  },
+  "empty": {
+    "verified": "No verified facts yet. Be the first to report one.",
+    "disputed": "No claims in voting right now.",
+    "tagsis": "No adulteration alerts this week.",
+    "listings": "No businesses added yet."
+  },
+  "stats": {
+    "businessCount_one": "{{count}} business",
+    "businessCount_other": "{{count}} businesses"
+  }
+}

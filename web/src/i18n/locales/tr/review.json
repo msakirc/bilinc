@@ -1,0 +1,61 @@
+{
+  "screenTitle": "Değerlendirme Yaz",
+  "title": "Değerlendirme Yaz",
+  "ratingLabel": "Puanınız",
+  "ratingLabelWeb": "Puan *",
+  "ratingPlaceholder": "Bir puan seçin",
+  "starLabels": {
+    "1": "Berbat",
+    "2": "Kötü",
+    "3": "İdare Eder",
+    "4": "İyi",
+    "5": "Mükemmel"
+  },
+  "content": {
+    "label": "Değerlendirmeniz",
+    "labelWeb": "Değerlendirme *",
+    "placeholder": "Deneyiminizi paylaşın...",
+    "placeholderWeb": "Deneyiminizi paylaşın (en az 10 karakter)",
+    "charCount": "{{count}} karakter"
+  },
+  "titleField": {
+    "label": "Başlık (isteğe bağlı)",
+    "placeholder": "Yorumunuza bir başlık verin"
+  },
+  "media": {
+    "title": "Fotoğraf Ekle",
+    "subtitle": "En fazla {{max}} fotoğraf ({{count}}/{{max}})",
+    "add": "Ekle",
+    "permissionTitle": "İzin Gerekli",
+    "permissionMessage": "Fotoğraf eklemek için galeri erişimine izin verin."
+  },
+  "privacyNotice": "Kullanıcı adınız görünür olacaktır",
+  "submit": "Değerlendirmeyi Gönder",
+  "submitWeb": "Değerlendirmeyi Gönder",
+  "submitting": "Gönderiliyor...",
+  "saveDraft": "Taslak Olarak Kaydet",
+  "draftSaved": {
+    "title": "Taslak Kaydedildi",
+    "message": "Değerlendirmeniz taslak olarak kaydedildi."
+  },
+  "guest": {
+    "title": "Giriş Yapmanız Gerekiyor",
+    "subtitle": "Değerlendirme göndermek için lütfen hesabınıza giriş yapın.",
+    "back": "Geri Dön"
+  },
+  "validation": {
+    "selectRating": "Lütfen bir puan seçin",
+    "minLength": "Değerlendirme en az 10 karakter olmalı"
+  },
+  "success": {
+    "title": "Başarılı",
+    "message": "Değerlendirmeniz gönderildi!"
+  },
+  "error": {
+    "auth": "Değerlendirme göndermek için giriş yapmanız gerekiyor.",
+    "generic": "Değerlendirme gönderilemedi. Lütfen tekrar deneyin.",
+    "genericWeb": "Değerlendirme gönderilemedi"
+  },
+  "starAria": "{{n}} yıldız",
+  "ratingGroupAria": "Puan"
+}

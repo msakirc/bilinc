@@ -1,0 +1,50 @@
+{
+  "screenTitle": "Report a Fact",
+  "title": "Add Fact",
+  "reputationNotice": "Reporting a fact requires at least 100 reputation points. Your current score: {{score}}. Write reviews and stay active in the community to earn points.",
+  "lowReputation": {
+    "title": "Insufficient Reputation",
+    "message": "You need at least 100 reputation points to add a fact. You can earn reputation by writing reviews.",
+    "currentScore": "Your current score: {{score}}"
+  },
+  "warning": "Unlike subjective opinions, facts must be objectively verifiable.",
+  "statement": {
+    "label": "Fact Statement",
+    "labelWeb": "Fact",
+    "placeholder": "State the fact clearly and concisely...",
+    "placeholderWeb": "Enter a verifiable fact (at least 20 characters)",
+    "charCount": "{{count}} characters"
+  },
+  "evidence": {
+    "label": "Evidence",
+    "note": "Add supporting evidence (optional)",
+    "placeholder": "https://..."
+  },
+  "category": {
+    "label": "Category",
+    "labelRequired": "Category *",
+    "placeholder": "Select a category"
+  },
+  "truthGuarantee": {
+    "label": "I guarantee this information is true to the best of my knowledge",
+    "labelWeb": "I attest that this information is true",
+    "warning": "Reporting false information may affect your reputation score"
+  },
+  "submit": "Report Fact",
+  "submitWeb": "Submit Fact",
+  "submitting": "Submitting...",
+  "validation": {
+    "selectCategory": "Please select a category",
+    "minLength": "The fact must be at least 20 characters",
+    "guaranteeRequired": "You must confirm the accuracy guarantee"
+  },
+  "success": {
+    "title": "Success",
+    "message": "Your fact report has been submitted! It will await community verification."
+  },
+  "error": {
+    "lowReputation": "You don't have enough reputation to report a fact (at least 100 points required).",
+    "generic": "Could not submit the fact report. Please try again.",
+    "genericWeb": "Could not submit the fact"
+  }
+}

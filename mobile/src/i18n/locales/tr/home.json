@@ -1,0 +1,77 @@
+{
+  "searchPlaceholder": "İşletme, ürün veya marka ara...",
+  "hero": {
+    "title": "Sana söylenmeyeni\nöğren.",
+    "subtitle": "Tağşişli gıda, sigortasız çalıştırma, gizli zam, çevre kirliliği — resmi veriler ve topluluk bildirimleriyle gerçekleri gör.",
+    "webTitle": "Görüşler bir yana, <em>gerçekler</em> bir yana.",
+    "webSubtitle": "İşletmeler, markalar ve ürünler hakkında topluluk tarafından doğrulanan gerçekleri keşfet.",
+    "eyebrow": "Türkiye'nin doğrulanmış gerçekler platformu",
+    "searchCta": "Ara"
+  },
+  "sections": {
+    "categories": "Kategoriler",
+    "foodSafetyWarnings": "Gıda Güvenliği Uyarıları",
+    "nearbyBusinesses": "Yakınındaki İşletmeler",
+    "popularBusinesses": "Popüler İşletmeler",
+    "tagsisWarnings": "Tağşiş Uyarıları",
+    "verifiedFacts": "Doğrulanmış Gerçekler",
+    "disputedClaims": "Tartışmalı İddialar",
+    "recentlyAdded": "Yeni Eklenenler",
+    "viewAll": "Tümü →",
+    "tagsisThisWeek_one": "Bu hafta {{count}} uyarı →",
+    "tagsisThisWeek_other": "Bu hafta {{count}} uyarı →"
+  },
+  "tagsis": {
+    "officialData": "RESMİ VERİ",
+    "source": "T.C. Tarım ve Orman Bakanlığı tağşiş tespit verileri",
+    "detail": "Detay"
+  },
+  "trust": { "facts": "Doğrulanmış gerçek", "businesses": "İşletme", "cities": "İl" },
+  "fact": { "inVoting": "Oylamada", "truePctSuffix": "doğru" },
+  "listing": {
+    "factBadge_one": "{{count}} doğrulanmış gerçek",
+    "factBadge_other": "{{count}} doğrulanmış gerçek",
+    "tagsisBadge_one": "{{count}} tağşiş uyarısı",
+    "tagsisBadge_other": "{{count}} tağşiş uyarısı"
+  },
+  "location": {
+    "title": "Yakınındaki işletmeleri gör",
+    "description": "Konum bilgin yalnızca sana yakın işletmeleri göstermek için kullanılır. Hiçbir şekilde saklanmaz veya paylaşılmaz.",
+    "enable": "Konumu Etkinleştir"
+  },
+  "impact": {
+    "title": "Katkın",
+    "emptyHeading": "Güvenilir bir topluluğu birlikte kurarız",
+    "emptyBody": "Bildiğin yerleri değerlendir, deneyimlerini paylaş. Her katkı topluluğu güçlendirir ve seni bilgi paylaşma hakkına yaklaştırır.",
+    "points": "Puan",
+    "level": "Seviye",
+    "credibilityNew": "Yeni",
+    "forFactReporting": "Bilgi paylaşımı için",
+    "pointsProgress": "{{current}}/{{threshold}} puan",
+    "writeReview": "Değerlendirme Yaz",
+    "writeFact": "Bilgi Ekle"
+  },
+  "cta": {
+    "title": "Herkes bir şey biliyor",
+    "body": "Tağşiş, kötü muamele, işçi hakkı ihlali, çevre kirliliği...\nBildiğin gerçeği paylaş, başkalarını koru."
+  },
+  "join": {
+    "label": "Topluluğa katıl",
+    "title": "Bir gerçek biliyorsan, topluluk doğrulasın.",
+    "body": "Yorum yaz, gerçek bildir, oyla. 100 puana ulaştığında sen de gerçek bildirebilirsin.",
+    "perReview": "Her yorum",
+    "perFact": "Doğrulanan gerçek",
+    "threshold": "Bildiri eşiği",
+    "cta": "Ücretsiz katıl"
+  },
+  "empty": {
+    "verified": "Henüz doğrulanmış gerçek yok. İlk sen bildir.",
+    "disputed": "Şu an oylamada iddia yok.",
+    "tagsis": "Bu hafta tağşiş uyarısı yok.",
+    "listings": "Henüz işletme eklenmedi."
+  },
+  "stats": {
+    "businessCount_one": "{{count}} işletme",
+    "businessCount_other": "{{count}} işletme"
+  }
+}

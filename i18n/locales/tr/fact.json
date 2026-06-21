@@ -1,0 +1,50 @@
+{
+  "screenTitle": "Bilgi Ekle",
+  "title": "Bilgi Ekle",
+  "reputationNotice": "Bilgi paylaşmak için en az 100 itibar puanı gereklidir. Mevcut puanınız: {{score}}. Puan kazanmak için değerlendirme yapın ve toplulukta aktif olun.",
+  "lowReputation": {
+    "title": "Yetersiz İtibar Puanı",
+    "message": "Bilgi eklemek için en az 100 itibar puanına ihtiyacınız var. Yorum yazarak itibar kazanabilirsiniz.",
+    "currentScore": "Mevcut puanınız: {{score}}"
+  },
+  "warning": "Bilgiler, öznel görüşlerden farklı olarak, nesnel biçimde doğrulanabilir olmalıdır.",
+  "statement": {
+    "label": "Bilgi",
+    "labelWeb": "Bilgi",
+    "placeholder": "Bilgiyi açık ve net bir şekilde belirtin...",
+    "placeholderWeb": "Doğrulanabilir bir bilgi girin (en az 20 karakter)",
+    "charCount": "{{count}} karakter"
+  },
+  "evidence": {
+    "label": "Kanıt",
+    "note": "Destekleyici kanıt ekleyin (isteğe bağlı)",
+    "placeholder": "https://..."
+  },
+  "category": {
+    "label": "Kategori",
+    "labelRequired": "Kategori *",
+    "placeholder": "Kategori seçin"
+  },
+  "truthGuarantee": {
+    "label": "Bu bilginin bildiğim kadarıyla doğru olduğunu beyan ederim",
+    "labelWeb": "Bu bilginin bildiğim kadarıyla doğru olduğunu beyan ederim",
+    "warning": "Yanlış bilgi paylaşmak itibar puanınızı etkileyebilir"
+  },
+  "submit": "Bilgiyi Gönder",
+  "submitWeb": "Bilgiyi Gönder",
+  "submitting": "Gönderiliyor...",
+  "validation": {
+    "selectCategory": "Lütfen bir kategori seçin",
+    "minLength": "Bilgi en az 20 karakter olmalı",
+    "guaranteeRequired": "Doğru bilgi beyanını onaylamanız gerekiyor"
+  },
+  "success": {
+    "title": "Başarılı",
+    "message": "Bilgi paylaşımınız gönderildi! Topluluk doğrulaması beklenecektir."
+  },
+  "error": {
+    "lowReputation": "Bilgi paylaşmak için yeterli itibar puanınız yok (en az 100 puan gerekli).",
+    "generic": "Bilgi gönderilemedi. Lütfen tekrar deneyin.",
+    "genericWeb": "Bilgi gönderilemedi"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "placeholder": "İşletme, ürün veya marka ara...",
+  "placeholderWeb": "İşletme, ürün veya marka ara...",
+  "resultsFor": "\"{{query}}\" için sonuçlar",
+  "resultCount_one": "{{count}} sonuç",
+  "resultCount_other": "{{count}} sonuç",
+  "sort": {
+    "mostReviewed": "En Çok Değerlendirilen",
+    "topRated": "En Yüksek Puan"
+  },
+  "status": {
+    "searching": "Aranıyor..."
+  },
+  "empty": {
+    "noResultsSubtitle": "Farklı anahtar kelimeler deneyin",
+    "noResultsSubtitleWeb": "Farklı anahtar kelimeler veya filtreler deneyin",
+    "promptTitle": "Aramak için bir şey yazın",
+    "promptSubtitle": "İşletme, ürün veya marka arayabilirsiniz"
+  },
+  "browse": {
+    "recentSearches": "Son Aramalar",
+    "browseCategories": "Kategorilere Göz At",
+    "popularNow": "Şu Anda Popüler"
+  },
+  "popular": {
+    "pizzaNearby": "yakınımda pizza",
+    "pharmacyHours": "eczane çalışma saatleri",
+    "oilChange": "yağ değişimi servisi",
+    "bestCoffee": "en iyi kahveciler",
+    "winterTires": "kış lastiği montajı"
+  },
+  "filters": {
+    "title": "Filtreler",
+    "type": "Tür",
+    "city": "Şehir",
+    "allCities": "Tüm Şehirler",
+    "minRating": "Minimum Puan",
+    "all": "Tümü"
+  },
+  "result": {
+    "reviewCount_one": "({{count}} değerlendirme)",
+    "reviewCount_other": "({{count}} değerlendirme)"
+  },
+  "pagination": {
+    "previous": "Önceki",
+    "next": "Sonraki"
+  }
+}

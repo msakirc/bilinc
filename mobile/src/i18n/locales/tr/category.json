@@ -1,0 +1,31 @@
+{
+  "screenTitle": "Kategori",
+  "resultsTitle": "Sonuçlar",
+  "loading": "Kategori yükleniyor...",
+  "resultsLoading": "Sonuçlar yükleniyor...",
+  "placeCount_one": "{{formattedCount}} yer",
+  "placeCount_other": "{{formattedCount}} yer",
+  "detail": {
+    "description": "Bu kategorideki işletmeleri ve ürünleri keşfedin",
+    "subCategories": "Alt Kategoriler",
+    "topRated": "{{name}} - En Yüksek Puan",
+    "topRatedFact": "Yüksek puan alan işletme",
+    "seeAllResults": "Tüm Sonuçları Gör"
+  },
+  "sort": {
+    "mostReviewed": "En Çok Değerlendirilen",
+    "topRated": "En Yüksek Puan"
+  },
+  "empty": {
+    "noResultsSubtitle": "Farklı filtreler deneyin",
+    "notFound": "Kategori bulunamadı",
+    "noBusinesses": "Bu kategoride henüz işletme yok"
+  },
+  "result": {
+    "reviewCount_one": "({{count}} değerlendirme)",
+    "reviewCount_other": "({{count}} değerlendirme)"
+  },
+  "breadcrumb": {
+    "home": "Ana Sayfa"
+  }
+}

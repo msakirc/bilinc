@@ -1,0 +1,55 @@
+# Bug-lock: registration is blocked until BOTH legal consents are given.
+# Order in handleRegister: terms gate, then KVKK açık rıza gate — both run
+# BEFORE the username-availability network check, so this is deterministic and
+# needs no seeded data. NON-DESTRUCTIVE: no account is ever created (the gates
+# return before signUp).
+appId: ${APP_ID}
+---
+- runFlow: _launch.yaml
+- scrollUntilVisible:
+    element:
+      text: "Zaten hesabın var mı? Giriş Yap"
+    direction: DOWN
+    visibilityPercentage: 20
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+- tapOn: "Zaten hesabın var mı? Giriş Yap"
+- tapOn:
+    id: "login-register"
+# Fill all fields with valid, matching values but leave BOTH consents unchecked.
+- tapOn:
+    id: "register-username"
+- inputText: "e2econsent"
+- tapOn:
+    id: "register-password"
+- inputText: "Test1234!"
+- tapOn:
+    id: "register-confirm-password"
+- inputText: "Test1234!"
+- hideKeyboard
+- scrollUntilVisible:
+    element:
+      id: "register-submit"
+    direction: DOWN
+    visibilityPercentage: 20
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+# 1) No consents -> Terms gate fires first.
+- tapOn:
+    id: "register-submit"
+- assertVisible: ".*Kullanım Koşullarını ve Gizlilik Politikasını kabul edin.*"
+- tapOn: "OK|Tamam"
+# 2) Accept terms only -> KVKK cross-border-transfer açık rıza gate fires.
+- tapOn:
+    id: "register-terms-checkbox"
+- scrollUntilVisible:
+    element:
+      id: "register-submit"
+    direction: DOWN
+    visibilityPercentage: 20
+    centerElement: true
+    waitToSettleTimeoutMs: 1000
+- tapOn:
+    id: "register-submit"
+- assertVisible: ".*yurt dışına veri aktarımına ilişkin açık rıza.*"
+- tapOn: "OK|Tamam"

@@ -1,0 +1,113 @@
+name: Test
+
+on:
+  push:
+    branches: [main, master, "test/**", "feat/**", "fix/**"]
+  pull_request:
+    branches: [main, master]
+  schedule:
+    # Nightly mutation run at 02:00 UTC
+    - cron: "0 2 * * *"
+
+jobs:
+  # ─────────────────────────────────────────────────────────────────────────
+  # Job 1: Unit tests + coverage gate
+  # ─────────────────────────────────────────────────────────────────────────
+  unit:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Honesty scan (no mocked assertions, no smoke tests)
+        run: npm run test:honest
+
+      - name: Unit tests with coverage gate
+        # --ci: no interactive prompts; fails if thresholds not met (jest.config.js)
+        run: npm run test:ci
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # Job 2: Database / pgTAP tests (cloud Supabase test project)
+  #         Only runs when TEST_DB_URL secret is configured in the repo.
+  #         The run.sh script hard-aborts if the URL references production.
+  # ─────────────────────────────────────────────────────────────────────────
+  db:
+    name: DB Tests (pgTAP)
+    runs-on: ubuntu-latest
+    # Skip entirely when the secret is absent (e.g. forks, dependabot PRs).
+    # Note: run.sh's prod-ref grep is the real production-safety net.
+    if: ${{ secrets.TEST_DB_URL != '' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install PostgreSQL client
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y postgresql-client
+
+      - name: Install pgTAP Perl module (pg_prove CLI)
+        # cpanm is available on ubuntu-latest GitHub runners
+        run: |
+          sudo cpanm --notest TAP::Parser::SourceHandler::pgTAP
+        # If cpanm is slow, an alternative is: sudo apt-get install -y pgtap
+        # (available on Ubuntu 22.04+ as the pgtap package which ships pg_prove)
+
+      - name: Run pgTAP tests
+        run: npm run test:db
+        env:
+          TEST_DB_URL: ${{ secrets.TEST_DB_URL }}
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # Job 3: Mutation testing (Stryker)
+  #
+  # Runs:
+  #   - On every push to main/master (enforces the break threshold)
+  #   - On the nightly schedule (catches regression over time)
+  #
+  # NOT run on feature-branch PRs (mutation runs are slow; unit job covers
+  # those. Run locally with `npm run test:mutation` before merging.)
+  #
+  # KNOWN BASELINE (2026-06-15): score is ~13% on legal.ts+dynamodb.ts.
+  # The break threshold in stryker.conf.json is set to 10 — the job currently
+  # PASSES (score 13% > break 10%) and continue-on-error keeps it non-blocking.
+  # Raise break upward as more mutation-killing tests are added.
+  # ─────────────────────────────────────────────────────────────────────────
+  mutation:
+    name: Mutation Testing (Stryker)
+    runs-on: ubuntu-latest
+    if: >
+      github.event_name == 'schedule' ||
+      (github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'))
+    # Allow mutation job to fail without blocking the overall workflow status
+    # while the baseline score is below the break threshold.
+    # Remove continue-on-error once mutation score exceeds the break threshold.
+    continue-on-error: true
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Stryker mutation tests
+        run: npm run test:mutation

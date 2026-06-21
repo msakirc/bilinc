@@ -1,0 +1,204 @@
+{
+  "sidebar": {
+    "overview": "Genel Bakış",
+    "myBusinesses": "İşletmelerim",
+    "reviews": "Yorumlar",
+    "facts": "Bilgiler",
+    "subscription": "Abonelik",
+    "ownerRole": "İşletme Sahibi"
+  },
+  "dashboard": {
+    "welcome": "Hoş geldiniz, {{name}}",
+    "subtitle": "İşletme panelinize genel bakış",
+    "emptyTitle": "Henüz doğrulanmış işletmeniz yok",
+    "emptyDescription": "İşletmenizi sahiplenme talebinde bulunarak yönetmeye başlayabilirsiniz.",
+    "claimBusiness": "İşletme Sahiplen",
+    "stats": {
+      "rating": "Puan",
+      "reviews": "Yorum",
+      "facts": "Bilgi"
+    },
+    "viewReviews": "Yorumlar",
+    "viewFacts": "Bilgiler"
+  },
+  "listings": {
+    "title": "İşletmelerim",
+    "emptyTitle": "Henüz doğrulanmış işletmeniz yok",
+    "emptyDescription": "İşletmenizi sahiplenme talebinde bulunarak yönetmeye başlayabilirsiniz.",
+    "claimBusiness": "İşletme Sahiplen",
+    "table": {
+      "name": "İşletme Adı",
+      "type": "Tür",
+      "rating": "Puan",
+      "reviews": "Yorum",
+      "facts": "Bilgi",
+      "status": "Durum"
+    }
+  },
+  "reviews": {
+    "title": "Yorumlar",
+    "filters": {
+      "all": "Tümü",
+      "unanswered": "Yanıtlanmamış",
+      "answered": "Yanıtlanmış"
+    },
+    "emptyTitle": "Yorum bulunamadı",
+    "emptyUnanswered": "Yanıtlanmamış yorum yok.",
+    "emptyAnswered": "Yanıtlanmış yorum yok.",
+    "emptyAll": "Henüz yorum yapılmamış.",
+    "anonymous": "Anonim",
+    "yourResponse": "Yanıtınız",
+    "responsePlaceholder": "Yanıtınızı yazın...",
+    "writeResponse": "Yanıt Yaz",
+    "submitting": "Gönderiliyor..."
+  },
+  "facts": {
+    "title": "Bilgiler",
+    "filters": {
+      "all": "Tümü",
+      "unanswered": "Yanıtlanmamış",
+      "answered": "Yanıtlanmış",
+      "verified": "Doğrulanmış",
+      "disputed": "Tartışmalı"
+    },
+    "emptyTitle": "Bilgi bulunamadı",
+    "emptyUnanswered": "Yanıtlanmamış bilgi yok.",
+    "emptyAnswered": "Yanıtlanmış bilgi yok.",
+    "emptyAll": "Henüz bilgi raporlanmamış.",
+    "anonymous": "Anonim",
+    "yourResponse": "Yanıtınız",
+    "responsePlaceholder": "Yanıtınızı yazın...",
+    "writeResponse": "Yanıt Yaz",
+    "submitting": "Gönderiliyor..."
+  },
+  "subscription": {
+    "title": "Abonelik",
+    "currentPlanTitle": "Mevcut Planınız",
+    "active": "Aktif",
+    "period": "Dönem: {{start}} - {{end}}",
+    "freePlan": "Ücretsiz Plan",
+    "freePlanNote": "Temel özelliklerden yararlanıyorsunuz.",
+    "plansTitle": "Planlar",
+    "perMonthSuffix": "TL/ay",
+    "contactPrice": "İletişime geçin",
+    "currentPlan": "Mevcut Plan",
+    "upgrade": "Yükselt",
+    "comingSoon": "Yakında",
+    "tiers": {
+      "free": {
+        "name": "Ücretsiz",
+        "features": {
+          "view": "İşletme görüntüleme",
+          "basicStats": "Temel istatistikler"
+        }
+      },
+      "basic": {
+        "name": "Temel",
+        "features": {
+          "replyReviews": "Yorumlara yanıt",
+          "replyFacts": "Bilgilere yanıt",
+          "statsPanel": "İstatistik paneli"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "features": {
+          "prioritySupport": "Öncelikli destek",
+          "detailedAnalytics": "Detaylı analitik",
+          "customBadges": "Özel rozetler"
+        }
+      },
+      "enterprise": {
+        "name": "Kurumsal",
+        "features": {
+          "apiAccess": "API erişimi",
+          "multiBusiness": "Çoklu işletme yönetimi",
+          "customIntegrations": "Özel entegrasyonlar"
+        }
+      }
+    }
+  },
+  "claim": {
+    "searchTitle": "İşletmenizi Sahiplenin",
+    "searchSubtitle": "Yönetmek istediğiniz işletmeyi aratıp seçin, ardından sahiplik talebinde bulunun.",
+    "searchPlaceholder": "İşletme adı arayın...",
+    "searching": "Aranıyor...",
+    "noResults": "Sonuç bulunamadı",
+    "requestTitle": "Sahiplik Talebi",
+    "businessNotFound": "İşletme bulunamadı",
+    "roleLabel": "Rolünüz *",
+    "roles": {
+      "owner": "Sahip",
+      "manager": "Yönetici",
+      "employee": "Çalışan"
+    },
+    "vknLabel": "Vergi Kimlik Numarası *",
+    "vknPlaceholder": "10 haneli VKN",
+    "vknHelp": "İşletmenin vergi kimlik numarası. Telefon/alan adı doğrulaması yakında eklenecek.",
+    "introTitle": "Bu İşletmeyi Sahiplenin",
+    "introWhy": "İşletmenizin sahibi ya da yetkilisiyseniz sahiplenme başvurusu yapabilirsiniz. Onaylı işletmeler, değerlendirmelere yanıt verebilir ve profil bilgilerini güncelleyebilir.",
+    "introBullet1": "Kimlik doğrulaması için kısa bir video çekin",
+    "introBullet2": "VKN ile işletme sahipliğini kanıtlayın",
+    "introBullet3": "Moderatörlerimiz 3 iş günü içinde inceler",
+    "sectionRole": "İŞLETMEDEKİ ROLÜNÜZ",
+    "sectionVkn": "VERGİ KİMLİK NUMARASI (VKN)",
+    "sectionAydinlatma": "AYDINLATMA METNİ",
+    "sectionVideo": "DOĞRULAMA VİDEOSU",
+    "vknHint": "VKN, vergi dairesinden aldığınız 10 haneli numaradır.",
+    "vknError": "Geçersiz VKN. Lütfen 10 haneli vergi kimlik numaranızı girin.",
+    "guestTitle": "Giriş Yapmanız Gerekiyor",
+    "guestWall": "İşletme sahiplenme başvurusu yapabilmek için lütfen giriş yapın.",
+    "goBack": "Geri Dön",
+    "successTitle": "Başvurunuz Alındı",
+    "successMessage": "Moderatörlerimiz başvurunuzu inceleyecek ve 3 iş günü içinde size geri dönecektir.",
+    "ok": "Tamam",
+    "capturedVideo": "Video kaydedildi ({{seconds}} sn)",
+    "retake": "Yeniden Çek",
+    "submitButton": "Başvuruyu Gönder",
+    "submittingButton": "Gönderiliyor…",
+    "cancel": "İptal",
+    "retryUpload": "Videoyu Tekrar Yükle",
+    "uploadError": "Video yüklenirken bir sorun oluştu. Tekrar deneyebilirsiniz.",
+    "errorTitle": "Hata",
+    "errorGeneric": "Başvuru gönderilirken bir sorun oluştu. Lütfen tekrar deneyin.",
+    "aydinlatmaLabel": "Aydınlatma Metni",
+    "aydinlatmaLink": "İşletme Doğrulama Aydınlatma Metni'ni okudum",
+    "consent": "Vergi kimlik numaram ve ilgili kişisel verilerimin sahiplik doğrulaması amacıyla işlenmesine KVKK kapsamında açık rıza veriyorum.",
+    "submit": "Talebi Gönder",
+    "submitting": "Gönderiliyor...",
+    "successDescription": "{{name}} için sahiplik talebiniz incelemeye gönderildi. Onaylandığında işletme paneliniz açılacak ve e-posta ile bilgilendirileceksiniz.",
+    "backToBusiness": "İşletmeye Dön",
+    "video": {
+      "permissionChecking": "Kamera izni kontrol ediliyor…",
+      "cameraPermissionTitle": "Kamera İzni Gerekli",
+      "cameraPermissionMessage": "Doğrulama videosu çekebilmek için kamera erişimine izin vermeniz gerekiyor.",
+      "permissionDeniedTitle": "Kamera İzni Gerekli",
+      "permissionDeniedMessage": "Doğrulama videosu çekmek için kamera iznine ihtiyaç vardır.",
+      "allowButton": "İzin Ver",
+      "openSettings": "Ayarları Aç",
+      "livenessInstruction": "Kayıt sırasında yüksek sesle okuyun:",
+      "recording": "Kayıt devam ediyor…",
+      "promptsTitle": "Video boyunca sırayla gösterin:",
+      "shot1": "Giriş + kapı/sokak numarası",
+      "shot2": "Kalıcı tabela (işletme adı görünür)",
+      "shot3": "Tezgâh arkası / yazarkasa / mutfak / berber bölümü",
+      "durationHint": "Önerilen süre: en az 30 saniye (maks. 60 sn)",
+      "startRecording": "Kayda Başla",
+      "stopRecording": "Kaydı Durdur",
+      "captured": "Video başarıyla kaydedildi"
+    },
+    "handoff": {
+      "title": "Videoyu telefonda tamamlayın",
+      "description": "Sahiplik doğrulama videosu, güvenlik ve konum doğrulaması için mobil uygulama üzerinden çekilmelidir. Aşağıdaki QR kodu telefonunuzla okutun veya bağlantıya dokunun.",
+      "deepLinkLabel": "Uygulamada Aç",
+      "qrAlt": "Bilinç uygulaması için QR kodu",
+      "claimIdLabel": "Talep No:"
+    },
+    "errors": {
+      "invalidVkn": "Geçerli bir 10 haneli vergi kimlik numarası girin",
+      "consentRequired": "Devam etmek için KVKK aydınlatma metnini onaylamanız gerekir",
+      "duplicate": "Bu işletme için zaten bekleyen bir talebiniz var",
+      "generic": "Talep gönderilemedi. Lütfen tekrar deneyin"
+    }
+  }
+}
